@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pastebin-drf-api"
+version = "0.1.0"
+description = "A simple pastebin code highlighting Web API"
+authors = ["Kevin Bowen <kevin.bowen@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.0.3"
+djangorestframework = "^3.13.1"
+Pygments = "^2.11.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
