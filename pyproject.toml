@@ -10,6 +10,7 @@ python = "^3.10"
 Django = "^4.0.3"
 djangorestframework = "^3.13.1"
 Pygments = "^2.11.2"
+environs = {extras = ["django"], version = "^9.5.0"}
 
 [tool.poetry.dev-dependencies]
 
