@@ -15,11 +15,14 @@ and have them highlighted using a number of formatting styles.
 ### Front page
 ![Posts](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_frontpage.png)
 
-### Profile
-![Profile](https://github.com/kevinbowen777/flaskblog/blob/master/images/flaskblog_profile.png)
+### User list
+![Profile](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_users.png)
 
-### Search Results
-![Profile](https://github.com/kevinbowen777/flaskblog/blob/master/images/flaskblog_search_results.png)
+### Code snippet list
+![Profile](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_snippet_list.png)
+
+### Code snippet detail
+![Profile](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_snippet_detail.png)
 
 
 ---
