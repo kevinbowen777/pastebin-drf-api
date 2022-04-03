@@ -1,5 +1,8 @@
 ## pastebin-drf-api - A simple pastebin code highlighting Web API
 
+A browsable Web API built using Django REST Framework(DRF) that allows
+authenticated users to post code snippets in the language of their choice 
+and have them highlighted using a number of formatting styles.
 
 ---
 ## Features
