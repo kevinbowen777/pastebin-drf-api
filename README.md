@@ -9,8 +9,8 @@
 ---
 ## Screenshots
 
-### Posts
-![Posts](https://github.com/kevinbowen777/flaskblog/blob/master/images/flaskblog_posts.png)
+### Front page
+![Posts](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_frontpage.png)
 
 ### Profile
 ![Profile](https://github.com/kevinbowen777/flaskblog/blob/master/images/flaskblog_profile.png)
