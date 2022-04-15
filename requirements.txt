@@ -30,7 +30,7 @@ pre-commit @ file:///home/kbowen/.cache/pypoetry/artifacts/a9/08/5f/365312191b96
 pycodestyle @ file:///home/kbowen/.cache/pypoetry/artifacts/67/1d/0b/aa6ec86495f3fc57e748e006fb36d7b4e65ddaf6de336617166ccad96d/pycodestyle-2.8.0-py2.py3-none-any.whl
 pyflakes @ file:///home/kbowen/.cache/pypoetry/artifacts/ce/06/1e/5fd69e017a941ae783a7e4d3fb29abc5238f0026d7745b4dc26d7e3379/pyflakes-2.4.0-py2.py3-none-any.whl
 Pygments @ file:///home/kbowen/.cache/pypoetry/artifacts/39/2f/e1/71ba9fe7dbfc4b9be1032a3c986049fc97892d3bc1e1bec68a030eca19/Pygments-2.11.2-py3-none-any.whl
-pyparsing @ file:///home/kbowen/.cache/pypoetry/artifacts/dd/d9/cf/3501b38e834b80f9ba80633358cced32539bea5dc1e786f4c2b1d2f682/pyparsing-3.0.7-py3-none-any.whl
+pyparsing @ file:///home/kbowen/.cache/pypoetry/artifacts/21/a6/3b/55ae9f701123d450744bdc09d9625793fa2ab7fb17bd557ec799ef097d/pyparsing-3.0.8-py3-none-any.whl
 PySocks @ file:///home/kbowen/.cache/pypoetry/artifacts/03/4f/5f/b66aaf1a892a9a6e3328b4c748005d51a45bc29409189931953059a7a4/PySocks-1.7.1-py3-none-any.whl
 python-dotenv @ file:///home/kbowen/.cache/pypoetry/artifacts/03/b3/0a/614098987b7913fdcbdc5e81af3d9b7deecbb2d3802ad78521603deb1e/python_dotenv-0.20.0-py3-none-any.whl
 pytz @ file:///home/kbowen/.cache/pypoetry/artifacts/76/c4/54/e82c514018d400ab72bc3cc53469bd3b519f30e674c7d905fd7c872314/pytz-2022.1-py2.py3-none-any.whl
