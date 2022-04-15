@@ -1,24 +1,23 @@
-[tool.poetry]
-name = "pastebin-drf-api"
-version = "0.1.0"
-description = "A simple pastebin code highlighting Web API"
-authors = ["Kevin Bowen <kevin.bowen@gmail.com>"]
-license = "MIT"
+[tool.black]
+line-length = 119
+# include =
+exclude = '''
+/(
+    \.git
+  | __pycache__
+  | .pytest_cache
+  | .venv
+  | build
+  | dist
+  | snippets/migrations/*
+  | snippets/migrations
+  | ^.*\b(migrations)\b.*$
+)/
+'''
 
-[tool.poetry.dependencies]
-python = "^3.10"
-Django = "^4.0.3"
-djangorestframework = "^3.13.1"
-Pygments = "^2.11.2"
-environs = {extras = ["django"], version = "^9.5.0"}
-
-[tool.poetry.dev-dependencies]
-httpie = "^3.1.0"
-pre-commit = "^2.18.1"
-black = "^22.3.0"
-flake8 = "^4.0.1"
-isort = "^5.10.1"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+skip = ["*.gitignore"]
+extend_skip = ["*.md", "*.json"]
+line_length = 119
