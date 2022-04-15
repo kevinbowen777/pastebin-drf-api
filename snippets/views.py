@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from rest_framework import permissions, renderers, viewsets
-from rest_framework.decorators import api_view, action
+from rest_framework.decorators import action, api_view
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
 
@@ -8,12 +8,15 @@ from .models import Snippet
 from .permissions import IsOwnerOrReadOnly
 from .serializers import SnippetSerializer, UserSerializer
 
-@api_view(['GET']) # new
+
+@api_view(["GET"])  # new
 def api_root(request, format=None):
-    return Response({
-        'users': reverse('user-list', request=request, format=format),
-        'snippets': reverse('snippet-list', request=request, format=format)
-    })
+    return Response(
+        {
+            "users": reverse("user-list", request=request, format=format),
+            "snippets": reverse("snippet-list", request=request, format=format),
+        }
+    )
 
 
 class SnippetViewSet(viewsets.ModelViewSet):
@@ -23,11 +26,13 @@ class SnippetViewSet(viewsets.ModelViewSet):
 
     Additionally we also provide an extra 'highlight' action.
     """
+
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
     permission_classes = (
         permissions.IsAuthenticatedOrReadOnly,
-        IsOwnerOrReadOnly, )
+        IsOwnerOrReadOnly,
+    )
 
     @action(detail=True, renderer_classes=[renderers.StaticHTMLRenderer])
     def highlight(self, request, *args, **kwargs):
@@ -42,5 +47,6 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
     """
     This viewset automatically provides 'list' and 'retrieve actions.
     """
+
     queryset = User.objects.all()
     serializer_class = UserSerializer

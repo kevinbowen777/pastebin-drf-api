@@ -1,7 +1,7 @@
 ## pastebin-drf-api - A simple pastebin code highlighting Web API
 
 A browsable Web API built using Django REST Framework(DRF) that allows
-authenticated users to post code snippets in the language of their choice 
+authenticated users to post code snippets in the language of their choice
 and have them highlighted using a number of formatting styles.
 
 ### Installation
@@ -11,7 +11,7 @@ and have them highlighted using a number of formatting styles.
  - `poetry install`
  - `python manage.py runserver`
  - Open browser to http://127.0.0.1:8000
- 
+
 ---
 ## Features
  - TBD
@@ -36,7 +36,7 @@ and have them highlighted using a number of formatting styles.
 ---
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/LICENSE)
 ---
-### Reporting Bugs                                                              
-                                                                                 
+### Reporting Bugs
+
    Visit the [Issues page](https://github.com/kevinbowen777/pastebin-drf-api/issues)
       to view currently open bug reports or open a new issue.
