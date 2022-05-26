@@ -1,6 +1,7 @@
 # updated 20220207
 # from: https://github.com/github/gitignore
 #
+datadump.json
 *.sqlite3
 app.db
 .idea/
