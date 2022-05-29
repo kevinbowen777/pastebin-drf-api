@@ -7,9 +7,9 @@ and have them highlighted using a number of formatting styles.
 ### Installation
  - `git clone https://github.com//kevinbowen777/pastebin-drf-api.git`
  - `cd pastebin-drf-api`
- - `workon pastebin-drf-api`
- - `poetry install`
- - `python manage.py runserver`
+ - `docker-compose up --build`
+ - `docker-compose exec web python manage.py migrate`
+ - `docker-compose exec web python manage.py createsuperuser`
  - Open browser to http://127.0.0.1:8000
 
 ---
