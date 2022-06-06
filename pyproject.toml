@@ -14,6 +14,29 @@ exclude = '''
   | ^.*\b(migrations)\b.*$
 )/
 '''
+[tool.coverage.paths]
+source = ["config", "snippets"]
+
+[tool.coverage.run]
+branch = true
+source = ["config"]
+omit = [
+    "*/__init__.py",
+    "*manage.py",
+    "*settings*.py",
+    "*urls.py",
+    "*admin.py",
+    "*migrations/*",
+    "*tests/*",
+    "*test_*.py",
+    "*tests.py",
+    "*wsgi.py",
+    "*conftest.py",
+    "*/extra*",
+]
+
+[tool.coverage.report]
+show_missing = true
 
 [tool.isort]
 profile = "black"
@@ -47,6 +70,16 @@ flake8 = "^4.0.1"
 isort = "^5.10.1"
 httpie = "^3.1.0"
 django-debug-toolbar = "^3.4.0"
+coverage = {extras = ["toml"], version = "^6.4.1"}
+pytest-cov = "^3.0.0"
+pytest-django = "^4.5.2"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+filterwarnings = [
+    "ignore::django.utils.deprecation.RemovedInDjango50Warning",
+]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
