@@ -14,6 +14,7 @@ exclude = '''
   | ^.*\b(migrations)\b.*$
 )/
 '''
+
 [tool.coverage.paths]
 source = ["config", "snippets"]
 
@@ -34,6 +35,12 @@ omit = [
     "*conftest.py",
     "*/extra*",
 ]
+plugins = [
+    "django_coverage_plugin",
+]
+
+[tool.coverage.django_coverage_plugin]
+template_extensions = "html, txt, tex, email"
 
 [tool.coverage.report]
 show_missing = true
@@ -56,6 +63,7 @@ license = "MIT"
 python = "^3.10"
 Django = "^4.0.5"
 djangorestframework = "^3.13.1"
+django-extensions = "^3.1.5"
 Pygments = "^2.11.2"
 environs = "^9.5.0"
 dj-database-url = "^0.5.0"
@@ -75,10 +83,18 @@ pytest-cov = "^3.0.0"
 pytest-django = "^4.5.2"
 django-test-plus = "^2.2.0"
 pytest-sugar = "^0.9.4"
-django-extensions = "^3.1.5"
 ipython = "^8.4.0"
 friendly = "^0.5.29"
 colorama = "^0.4.4"
+pytest = "^7.1.2"
+django-coverage-plugin = "^2.0.3"
+nox = "^2022.1.7"
+flake8-bandit = "^3.0.0"
+flake8-black = "^0.3.3"
+flake8-bugbear = "^22.6.22"
+flake8-docstrings = "^1.6.0"
+flake8-import-order = "^0.18.1"
+safety = "^1.10.3"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
