@@ -13,6 +13,9 @@ and have them highlighted using a number of formatting styles.
  - Open browser to http://127.0.0.1:8000
 
 ---
+### Live Demo on Heroku:
+ - [django-pastebin-api](https://kbowen-django-pastebin-api.herokuapp.com/)
+
 ## Features
  - TBD
 
