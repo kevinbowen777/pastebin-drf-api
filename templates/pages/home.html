@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+  <div class="jumbotron">
+    <h2 class="display-4">Welcome to the Pastebin DRF API</h2>
+
+    {% if user.is_authenticated %}
+
+      <a class="btn btn-lg btn-primary" href="api/v1/" role="button">Browse the API &raquo;</a>
+    {% else %}
+
+    <p class="lead">A pastebin API made with Django and the Django REST
+    framework.</p>
+
+      <a class="btn btn-lg btn-primary" href="{% url 'account_signup' %}"
+        role="button">Register &raquo;</a>
+    {% endif %}
+  </div>
+{% endblock page_header %}
