@@ -1,5 +1,5 @@
 [run]
-include = config/*, snippets/*
+include = accounts/*, config/*, pages/*, snippets/*
 omit =
     */__init__.py,
     *admin.py,
