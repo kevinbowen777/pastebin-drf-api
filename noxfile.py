@@ -4,7 +4,7 @@ import tempfile
 import nox
 
 nox.options.sessions = "lint", "safety", "tests"
-locations = "config", "snippets", "./noxfile.py"
+locations = "accounts", "config", "pages", "snippets", "./noxfile.py"
 
 
 def install_with_constraints(session, *args, **kwargs):
