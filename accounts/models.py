@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.urls import reverse
 from django_countries.fields import CountryField
 
 
@@ -12,3 +13,12 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
+
+    def get_absolute_url(self):
+        """Get URL for user's detail view.
+
+        Returns:
+            str: URL for user detail.
+
+        """
+        return reverse("user_detail", kwargs={"username": self.username})
