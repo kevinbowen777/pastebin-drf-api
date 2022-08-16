@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 from pygments import highlight
 from pygments.formatters.html import HtmlFormatter
@@ -21,7 +22,7 @@ class Snippet(models.Model):
         choices=STYLE_CHOICES, default="friendly", max_length=100
     )
     owner = models.ForeignKey(
-        "auth.User", related_name="snippets", on_delete=models.CASCADE
+        get_user_model(), related_name="snippets", on_delete=models.CASCADE
     )
     highlighted = models.TextField()
 

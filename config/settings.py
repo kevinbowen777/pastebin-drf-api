@@ -28,12 +28,21 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
     # third-party apps
-    # "debug_toolbar",
-    "django_extensions",
-    # Local
     "rest_framework",
-    "snippets",
+    "rest_framework.authtoken",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.github",
+    # "debug_toolbar",
+    "django_countries",
+    "django_extensions",
+    # Local apps
+    "accounts.apps.AccountsConfig",
+    "pages.apps.PagesConfig",
+    "snippets.apps.SnippetsConfig",
 ]
 
 MIDDLEWARE = [
@@ -117,13 +126,32 @@ STATICFILE_STORAGE = (
 MEDIA_URL = "/media/"
 MEDIA_ROOT = str(BASE_DIR.joinpath("media"))
 
+AUTH_USER_MODEL = "accounts.CustomUser"
+
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REST_FRAMEWORK = {
-    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",  # noqa:E501,B950
-    "PAGE_SIZE": 10,
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
+    ],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",  # noqa:E501,B950
+    "PAGE_SIZE": 5,
 }
+
+# django-allauth config
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
+SITE_ID = 1
+AUTHENTICATION_BACKENDS = (
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+)
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # django-debug-toolbar
 # Use the following in Docker only:

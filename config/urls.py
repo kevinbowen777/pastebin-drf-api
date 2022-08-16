@@ -5,7 +5,11 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    # Django admin
     path("admin/", admin.site.urls),
+    # User management
+    path("accounts/", include("allauth.urls")),
+    # Local apps
     path("api-auth/", include("rest_framework.urls")),
     path("", include("snippets.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
