@@ -35,12 +35,6 @@
    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       {% if user.is_authenticated %}
-          <li class="nav-item">
-          <a href="{% url 'redoc' %}" class="btn btn-outline-info ml-2">Redoc</a>
-          </li>
-          <li>
-          <a href="{% url 'swagger-ui' %}" class="btn btn-outline-info ml-2">Swagger-UI</a>
-          </li>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link dropdown-toggle ml-2" href="#"
