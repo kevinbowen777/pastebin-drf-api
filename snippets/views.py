@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from django.views.generic import ListView
 from rest_framework import permissions, renderers, viewsets
 from rest_framework.decorators import action, api_view
 from rest_framework.response import Response
@@ -54,3 +55,10 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
 
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
+class SnippetListView(ListView):
+    model = Snippet
+    template_name = "snippets/snippets_list.html"
+
+    paginate_by = 5
