@@ -10,8 +10,10 @@ urlpatterns = [
     # User management
     path("accounts/", include("allauth.urls")),
     # Local apps
+    path("accounts/", include("accounts.urls")),
+    path("", include("pages.urls")),
+    path("api/v1/", include("snippets.urls")),
     path("api-auth/", include("rest_framework.urls")),
-    path("", include("snippets.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
