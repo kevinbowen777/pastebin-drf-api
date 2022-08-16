@@ -12,7 +12,7 @@ from .serializers import SnippetSerializer, UserSerializer
 User = get_user_model()
 
 
-@api_view(["GET"])  # new
+@api_view(["GET"])
 def api_root(request, format=None):
     return Response(
         {

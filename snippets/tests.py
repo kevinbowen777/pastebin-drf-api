@@ -10,10 +10,10 @@ class SnippetTests(APITestCase):
     @classmethod
     def setUpTestData(cls):
         cls.user = get_user_model().objects.create_user(
-            username="blogreader", password="T3stP@s5123"
+            username="snippet_user", password="T3stP@s5123"
         )
 
-        cls.snipp = Snippet.objects.create(
+        cls.snippet = Snippet.objects.create(
             owner=cls.user,
             title="Snippet title",
             code="print('Hello World')",
@@ -27,34 +27,35 @@ class SnippetTests(APITestCase):
         assert snippet.__str__() == snippet.title
         assert str(snippet) == snippet.title
 
-    """
     def test_blog_content(self):
-        post = Post.objects.get(id=1)
-        author = f"{post.author}"
-        title = f"{post.title}"
-        body = f"{post.body}"
-        self.assertEqual(author, "blogreader")
-        self.assertEqual(title, "Blog title")
-        self.assertEqual(body, "Nice Body content...")
+        snippet = Snippet.objects.get(id=1)
+        owner = f"{snippet.owner}"
+        title = f"{snippet.title}"
+        code = f"{snippet.code}"
+        self.assertEqual(owner, "snippet_user")
+        self.assertEqual(title, "Snippet title")
+        self.assertEqual(code, "print('Hello World')")
 
     def test_api_listview(self):
-        self.client.login(username="blogreader", password="T3stP@s5123")
-        response = self.client.get(reverse("post_list"))
+        self.client.login(username="snippet_user", password="T3stP@s5123")
+        response = self.client.get(reverse("snippet-list"))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(Post.objects.count(), 1)
+        self.assertEqual(Snippet.objects.count(), 1)
         # self.assertContains(response, self.post)
 
+    """
     def test_api_logged_out_deny_listview_access(self):
         response = self.client.get(reverse("post_list"))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         # self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+    """
 
     def test_api_detailview(self):
-        self.client.login(username="blogreader", password="T3stP@s5123")
+        self.client.login(username="snippet_user", password="T3stP@s5123")
         response = self.client.get(
-            reverse("post_detail", kwargs={"pk": self.post.id}), format="json"
+            reverse("snippet-detail", kwargs={"pk": self.snippet.id}),
+            format="json",
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(Post.objects.count(), 1)
-        self.assertContains(response, "Nice Body content...")
-    """
+        self.assertEqual(Snippet.objects.count(), 1)
+        self.assertContains(response, "Hello World")
