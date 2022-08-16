@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # "debug_toolbar",
     "django_countries",
     "django_extensions",
+    "drf_spectacular",
     # Local apps
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
@@ -141,8 +142,15 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.SessionAuthentication",
         "rest_framework.authentication.TokenAuthentication",
     ],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",  # noqa:E501,B950
     "PAGE_SIZE": 5,
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Pastebin DRF API Project",
+    "DESCRIPTION": "A simple pastebin code highlighting Web API",
+    "VERSION": "0.1.0",
 }
 
 # django-allauth config
