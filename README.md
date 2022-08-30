@@ -1,4 +1,14 @@
-## pastebin-drf-api - A simple pastebin code highlighting Web API
+## pastebin-drf-api 
+
+<div align="center">
+
+  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
+  [![GitHub Issues](https://img.shields.io/github/issues/kevinbowen777/pastebin-drf-api.svg)](https://github.com/kevinbowen777/pastebin-drf-api/issues)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+- A simple pastebin code highlighting Web API
 
 A browsable Web API built using Django REST Framework(DRF) that allows
 authenticated users to post code snippets in the language of their choice
