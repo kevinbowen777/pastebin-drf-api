@@ -426,7 +426,7 @@ sqlparse = ">=0.2.0"
 
 [[package]]
 name = "django-extensions"
-version = "3.2.0"
+version = "3.2.1"
 description = "Extensions for Django"
 category = "main"
 optional = false
@@ -1871,7 +1871,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "a69544f054718a034f7a845ce9d3cdfbfab93d4fbc29bf492bfa5194a8c32328"
+content-hash = "db6ecd1b6543e48d908a29b909448b2e181957a5636e257ee6926b6bfb523cf2"
 
 [metadata.files]
 alabaster = [
@@ -2169,8 +2169,8 @@ django-debug-toolbar = [
     {file = "django_debug_toolbar-3.6.0-py3-none-any.whl", hash = "sha256:fe7fe3f21865218827e2162ecc06eba386dfe8cffe4f3501c49bb4359e06a0e6"},
 ]
 django-extensions = [
-    {file = "django-extensions-3.2.0.tar.gz", hash = "sha256:7dc7cd1da50d83b76447a58f5d7e5c8e6cd83f21e9b7e5f97e6b644f4d4e21a6"},
-    {file = "django_extensions-3.2.0-py3-none-any.whl", hash = "sha256:4c234a7236e9e41c17d9036f6dae7a3a9b212527105b8a0d24b2459b267825f0"},
+    {file = "django-extensions-3.2.1.tar.gz", hash = "sha256:2a4f4d757be2563cd1ff7cfdf2e57468f5f931cc88b23cf82ca75717aae504a4"},
+    {file = "django_extensions-3.2.1-py3-none-any.whl", hash = "sha256:421464be390289513f86cb5e18eb43e5dc1de8b4c27ba9faa3b91261b0d67e09"},
 ]
 django-test-plus = [
     {file = "django-test-plus-2.2.0.tar.gz", hash = "sha256:e8826e9715cd52b8bf2a426cda0a6bb900a45aee5b2d7837fc6d2ca81dabee6f"},
