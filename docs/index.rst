@@ -1,5 +1,5 @@
-pastebin-drf-api - A pastebin API built with the Django REST framework
-======================================================================
+pastebin-drf-api
+================
 
 .. toctree::
    :hidden:
@@ -7,7 +7,7 @@ pastebin-drf-api - A pastebin API built with the Django REST framework
 
    license
 
-This repository runs a Django 4.0.7/DRF 3.13 API.
+A simple pastebin code highlighting Web API built with the Django 4.1.1 web framework and the Django REST Framework(DRF).
 
 A browsable Web API built using Django REST Framework(DRF) that allows
 authenticated users to post code snippets in the language of their choice

@@ -17,12 +17,28 @@ and have them highlighted using a number of code formatting styles.
 ---
 ## Features
 
- - Browseable Web API
- - SwaggerUI & ReDoc API documentation
- - User registration with email verification & social(GitHub) login
- - Bootstrap4 & crispy-forms decorations
- - Customizable user profiles with bio, profile picture & country flags
- - Nox testing sessions (black, linting, pytest, coverage, Sphinx doc generation)
+ - Application
+     - Browseable Web API
+     - SwaggerUI & ReDoc API documentation
+     - User registration with email verification & social(GitHub) login
+     - Bootstrap4 & crispy-forms decorations
+     - Customizable user profile pages with bio, profile pic, & country flags
+ - Dev/testing
+     - basic module testing templates
+     - Coverage reports
+     - Debug-toolbar available
+     - Examples of using Factories & pytest fixtures in account app testing
+     - `shell_plus` with IPython via `django-extensions` package
+     - Nox testing sessions for latest Python 3.9, 3.10, and 3.11
+         - black
+         - Sphinx documentaion generation
+         - linting
+             - flake8
+             - flake8-bugbear
+             - flake8-docstrings
+             - flake8-import-order
+         - safety(python package vulnerability testing)
+         - pytest sessions with coverage
 
 ---
 ### Installation
@@ -34,8 +50,40 @@ and have them highlighted using a number of code formatting styles.
  - Open browser to http://127.0.0.1:8000
 
 ---
+### Testing
+ - `docker-compose exec web python manage.py test`
+ - `coverage run -m pytest`
+ - Nox (includes sessions for black, lint, safety, tests)
+     - testing supported for Python 3.9, 3.10, 3.11
+     - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
+
+---
 ### Live Demo on Heroku:
  - [django-pastebin-api](https://kbowen-django-pastebin-api.herokuapp.com/)
+
+---
+### Application URLs
+
+ - Log In endpoint:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/login/
+ - Log Out endpoint:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/logout/
+ - Password reset:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/password/reset
+ - Password reset confirmation:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/password/reset/confirm
+ - User registration endpoint:
+    http://127.0.0.1:8000/api/v1/dj-rest-auth/registration/
+ - User list:
+    http://127.0.0.1:8000/api/v1/users/
+ - User detail:
+    http://127.0.0.1:8000/api/v1/users/1/
+ - API schema download:
+    http://127.0.0.1:8000/api/schema/
+ - Redoc API browser:
+    http://127.0.0.1:8000/api/schema/redoc/
+ - Swagger-UI:
+    http://127.0.0.1:8000/api/schema/swagger-ui/
 
 ---
 ## Screenshots
