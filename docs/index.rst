@@ -7,6 +7,11 @@ pastebin-drf-api
 
    license
 
+.. contents:: Table of Contents
+   :local:
+   :backlinks: top
+   :depth: 2
+
 A simple pastebin code highlighting Web API built with the Django 4.1.1 web framework and the Django REST Framework(DRF).
 
 A browsable Web API built using Django REST Framework(DRF) that allows
@@ -16,12 +21,31 @@ and have them highlighted using a number of code formatting styles.
 Features
 --------
 
- * Browseable Web API
- * SwaggerUI & ReDoc API documentation
- * User registration with email verification & social(GitHub) login
- * Bootstrap4 & crispy-forms decorations
- * Customizable user profiles with bio, profile picture & country flags
- * Nox testing sessions (black, linting, pytest, coverage, Sphinx doc generation)
+ * Application
+
+   * Browseable Web API
+   * SwaggerUI & ReDoc API documentation
+   * User registration with email verification & social(GitHub) login
+   * Bootstrap4 & crispy-forms decorations
+   * Customizable user profile pages with bio, profile pic, & country flags
+ * Dev/testing
+
+   * basic module testing templates
+   * Coverage reports
+   * Debug-toolbar available
+   * Examples of using Factories & pytest fixtures in account app testing
+   * `shell_plus` with IPython via `django-extensions` package
+   * Nox testing sessions for latest Python 3.9, 3.10, and 3.11
+
+     * black
+     * Sphinx documentaion generation
+     * linting
+       
+       * flake8
+       * flake8-bugbear
+       * flake8-docstrings
+       * flake8-import-order
+       * safety(python package vulnerability testing)
 
 Installation
 ------------
@@ -34,8 +58,8 @@ run this command in your terminal:
    $ git clone https://github.com/kevinbowen777/pastebin-drf-api.git
    $ cd pastebin-drf-api
 
-Local install:
---------------
+Local installation
+------------------
 
 .. code-block:: console
 
@@ -45,8 +69,8 @@ Local install:
    $ python manage.py createsuperuser
 
 
-Docker install:
----------------
+Docker installation
+-------------------
 
 .. code-block:: console
 
@@ -66,7 +90,7 @@ To run pastebin-drf-api, locally, enter the following on the command line:
 
 For both local, or Docker installations, browse to `<http://127.0.0.1:8000>`_ or `<http://127.0.0.1:8000/admin/>`_
 
-Application URLs
+API URLs
 ----------------
  * Log In endpoint:
     `<http://127.0.0.1:8000/api/v1/dj-rest-auth/login/>`_
@@ -102,8 +126,10 @@ Testing
    $ nox -rs lint-3.11
    $ nox -s tests
 
-Live Application Demonstration on Heroku
-----------------------------------------
+Application Demo
+----------------
+Live demonstration of application running on Heroku:
+
 `kbowen-django-pastebin-drf-api <https://kbowen-django-pastebin-api.herokuapp.com/>`_
 
 Reporting Bugs

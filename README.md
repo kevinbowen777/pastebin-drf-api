@@ -14,9 +14,18 @@ A browsable Web API built using Django REST Framework(DRF) that allows
 authenticated users to post code snippets in the language of their choice
 and have them highlighted using a number of code formatting styles.
 
----
-## Features
+##### Table of Contents
+ - [Features](#features)
+ - [Installation](#installation)
+ - [Testing](#testing)
+ - [API URLs](#api-urls)
+ - [Application Demo](#application-demo)
+ - [Screenshots](#screenshots)
+ - [Reporting Bugs](#reporting-bugs)
 
+---
+
+### Features
  - Application
      - Browseable Web API
      - SwaggerUI & ReDoc API documentation
@@ -41,13 +50,20 @@ and have them highlighted using a number of code formatting styles.
          - pytest sessions with coverage
 
 ---
+
 ### Installation
  - `git clone https://github.com//kevinbowen777/pastebin-drf-api.git`
  - `cd pastebin-drf-api`
- - `docker-compose up --build`
- - `docker-compose exec web python manage.py migrate`
- - `docker-compose exec web python manage.py createsuperuser`
- - Open browser to http://127.0.0.1:8000
+ - Local installation
+     - `poetry install`
+     - `python manage.py migrate`
+     - `python manage.py createsuperuser`
+     - `python manage.py runserver`
+ - Docker installation
+     - `docker-compose up --build`
+     - `docker-compose python manage.py migrate`
+     - `docker-compose python manage.py createsuperuser`
+ - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/admin/
 
 ---
 ### Testing
@@ -58,11 +74,7 @@ and have them highlighted using a number of code formatting styles.
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
 
 ---
-### Live Demo on Heroku:
- - [django-pastebin-api](https://kbowen-django-pastebin-api.herokuapp.com/)
-
----
-### Application URLs
+### API URLs
 
  - Log In endpoint:
     http://127.0.0.1:8000/api/v1/dj-rest-auth/login/
@@ -86,7 +98,13 @@ and have them highlighted using a number of code formatting styles.
     http://127.0.0.1:8000/api/schema/swagger-ui/
 
 ---
-## Screenshots
+
+### Application Demo
+A live application demonstration hosted at Heroku
+ - [django-pastebin-api](https://kbowen-django-pastebin-api.herokuapp.com/)
+
+---
+### Screenshots
 
 ### Front page
 ![Posts](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_frontpage.png)
