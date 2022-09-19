@@ -33,7 +33,7 @@ and have them highlighted using a number of code formatting styles.
      - Bootstrap4 & crispy-forms decorations
      - Customizable user profile pages with bio, profile pic, & country flags
  - Dev/testing
-     - basic module testing templates
+     - Basic module testing templates
      - Coverage reports
      - Debug-toolbar available
      - Examples of using Factories & pytest fixtures in account app testing
@@ -66,6 +66,7 @@ and have them highlighted using a number of code formatting styles.
  - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/admin/
 
 ---
+
 ### Testing
  - `docker-compose exec web python manage.py test`
  - `coverage run -m pytest`
@@ -74,6 +75,7 @@ and have them highlighted using a number of code formatting styles.
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
 
 ---
+
 ### API URLs
 
  - Log In endpoint:
@@ -104,6 +106,7 @@ A live application demonstration hosted at Heroku
  - [django-pastebin-api](https://kbowen-django-pastebin-api.herokuapp.com/)
 
 ---
+
 ### Screenshots
 
 ### Front page
@@ -118,9 +121,6 @@ A live application demonstration hosted at Heroku
 ### Code snippet detail
 ![Profile](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_snippet_detail.png)
 
-
----
-[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/LICENSE)
 ---
 ### Reporting Bugs
 

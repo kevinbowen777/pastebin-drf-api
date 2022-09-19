@@ -30,7 +30,7 @@ Features
    * Customizable user profile pages with bio, profile pic, & country flags
  * Dev/testing
 
-   * basic module testing templates
+   * Basic module testing templates
    * Coverage reports
    * Debug-toolbar available
    * Examples of using Factories & pytest fixtures in account app testing
@@ -45,7 +45,8 @@ Features
        * flake8-bugbear
        * flake8-docstrings
        * flake8-import-order
-       * safety(python package vulnerability testing)
+     * safety(python package vulnerability testing)
+     * pytest sessions with coverage
 
 Installation
 ------------
