@@ -45,13 +45,6 @@ template_extensions = "html, txt, tex, email"
 [tool.coverage.report]
 show_missing = true
 
-[tool.isort]
-profile = "black"
-multi_line_output = 3
-skip = ["*.gitignore"]
-extend_skip = ["*.md", "*.json"]
-line_length = 79
-
 [tool.poetry]
 name = "pastebin-drf-api"
 version = "0.1.0"
@@ -83,7 +76,6 @@ drf-spectacular = "~=0.21.0"
 black = "^22.3.0"
 pre-commit = "^2.18.1"
 flake8 = "^4.0.1"
-isort = "^5.10.1"
 httpie = "^3.1.0"
 django-debug-toolbar = "^3.4.0"
 coverage = {extras = ["toml"], version = "^6.4.1"}
