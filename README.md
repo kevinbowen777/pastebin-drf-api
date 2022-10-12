@@ -48,6 +48,7 @@ and have them highlighted using a number of code formatting styles.
              - flake8-import-order
          - safety(python package vulnerability testing)
          - pytest sessions with coverage
+     - For additional links to package resources used in this repository, see the [Package Index](docs/package_index.md)
 
 ---
 
