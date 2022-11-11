@@ -28,7 +28,7 @@ and have them highlighted using a number of code formatting styles.
 ### Features
  - Application
      - Browseable Web API
-     - SwaggerUI & ReDoc API documentation
+     - Schema API documentation
      - User registration with email verification & social(GitHub) login
      - Bootstrap4 & crispy-forms decorations
      - Customizable user profile pages with bio, profile pic, & country flags
@@ -100,10 +100,6 @@ and have them highlighted using a number of code formatting styles.
     http://127.0.0.1:8000/api/v1/users/1/
  - API schema download:
     http://127.0.0.1:8000/api/schema/
- - Redoc API browser:
-    http://127.0.0.1:8000/api/schema/redoc/
- - Swagger-UI:
-    http://127.0.0.1:8000/api/schema/swagger-ui/
 
 ---
 
@@ -115,18 +111,34 @@ A live application demonstration hosted at Heroku
 
 ### Screenshots
 
-### Front page
-![Posts](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_frontpage.png)
+### Home
+![Home](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_home.png)
 
-### User list
-![Profile](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_users.png)
+### Index
+![Message Index](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_index.png)
 
-### Code snippet list
-![Profile](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_snippet_list.png)
+### Profile Page
+![Profile Page](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_profile-page.png)
 
-### Code snippet detail
-![Profile](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin_drf_snippet_detail.png)
+### Login Page
+![Login Page](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_sign-in.png)
 
+### Snippet 
+![Snippet](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_snippet.png)
+### Snippet List View
+![Snippet List View](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_snippet-list-view.png)
+
+### Snippet List Detail
+![Snippet List Detail](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_snippet-list-detail.png)
+
+### Swagger-UI
+![Swagger-UI](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_swagger-ui.png)
+
+### Redoc API page
+![Redoc API page](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_redoc-tree.png)
+
+### Email Address management
+![Email Address management](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_email-addresses.png)
 ---
 ### Reporting Bugs
 
