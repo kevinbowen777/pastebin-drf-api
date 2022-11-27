@@ -68,8 +68,7 @@ def lint(session):
         "flake8-bandit",
         "flake8-black",
         "flake8-bugbear",
-        "flake8-docstrings",
-        "flake8-import-order",
+        # "flake8-docstrings",
     )
     session.run("flake8", *args)
 
@@ -93,7 +92,6 @@ def safety(session):
             "safety",
             "check",
             f"--file={requirements.name}",
-            "--ignore=51457",
             "--full-report",
         )
 
