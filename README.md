@@ -121,33 +121,33 @@ TBD
 ### Screenshots
 
 ### Home
-![Home](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_home.png)
+![Home](images/pastebin-drf-api_home.png)
 
 ### Index
-![Message Index](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_index.png)
+![Message Index](images/pastebin-drf-api_index.png)
 
 ### Profile Page
-![Profile Page](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_profile-page.png)
+![Profile Page](images/pastebin-drf-api_profile-page.png)
 
 ### Login Page
-![Login Page](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_sign-in.png)
+![Login Page](images/pastebin-drf-api_sign-in.png)
 
 ### Snippet 
-![Snippet](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_snippet.png)
+![Snippet](images/pastebin-drf-api_snippet.png)
 ### Snippet List View
-![Snippet List View](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_snippet-list-view.png)
+![Snippet List View](images/pastebin-drf-api_snippet-list-view.png)
 
 ### Snippet List Detail
-![Snippet List Detail](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_snippet-list-detail.png)
+![Snippet List Detail](images/pastebin-drf-api_snippet-list-detail.png)
 
 ### Swagger-UI
-![Swagger-UI](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_swagger-ui.png)
+![Swagger-UI](images/pastebin-drf-api_swagger-ui.png)
 
 ### Redoc API page
-![Redoc API page](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_redoc-tree.png)
+![Redoc API page](images/pastebin-drf-api_redoc-tree.png)
 
 ### Email Address management
-![Email Address management](https://github.com/kevinbowen777/pastebin-drf-api/blob/master/images/pastebin-drf-api_email-addresses.png)
+![Email Address management](images/pastebin-drf-api_email-addresses.png)
 ---
 ### Reporting Bugs
 
