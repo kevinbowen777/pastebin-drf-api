@@ -34,9 +34,9 @@ export SECRET_KEY=<secret_key>
 # ENGINE_DB=django.db.backends.sqlite3
 # DATABASE_URL=sqlite:///pastebin-drf-api.sqlite3
 # export POSTGRES_DB=pastebin-drf-api.sqlite3
-export POSTGRES_USER=dummy
+export POSTGRES_USER=django_admin
 export POSTGRES_PASSWORD=<postgres_password>
-export POSTGRES_DB=postgres
+export POSTGRES_DB=pastebin-drf-api
 export POSTGRES_HOST=db
 export POSTGRES_PORT=5432
 
