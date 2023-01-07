@@ -23,18 +23,19 @@ class SnippetTests(APITestCase):
         )
 
     def test__str__(self):
-        snippet = Snippet.objects.get(id=1)
-        assert snippet.__str__() == snippet.title
-        assert str(snippet) == snippet.title
+        # snippet = Snippet.objects.get(id=1)
+        assert self.snippet.__str__() == self.snippet.title
+        assert str(self.snippet) == self.snippet.title
 
     def test_blog_content(self):
-        snippet = Snippet.objects.get(id=1)
-        owner = f"{snippet.owner}"
-        title = f"{snippet.title}"
-        code = f"{snippet.code}"
-        self.assertEqual(owner, "snippet_user")
-        self.assertEqual(title, "Snippet title")
-        self.assertEqual(code, "print('Hello World')")
+        # snippet = Snippet.objects.get(id=1)
+        # owner = f"{snippet.owner}"
+        # title = f"{snippet.title}"
+        # code = f"{snippet.code}"
+        # self.assertEqual(self.snippet.owner, "snippet_user")
+        # self.assertEqual(self.user, "snippet_user")
+        self.assertEqual(self.snippet.title, "Snippet title")
+        self.assertEqual(self.snippet.code, "print('Hello World')")
 
     def test_api_listview(self):
         self.client.login(username="snippet_user", password="T3stP@s5123")
