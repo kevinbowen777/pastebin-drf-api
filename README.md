@@ -39,7 +39,7 @@ and have them highlighted using a number of code formatting styles.
      - [Debug-toolbar](https://pypi.org/project/django-debug-toolbar/) available. See notes in `config/settings.py` for enabling.
      - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
      - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
-     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12 
+     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12
          - [black](https://pypi.org/project/black/) (`nox -s black`)
          - [Sphinx](https://pypi.org/project/Sphinx/) documentaion generation (`nox -s lint`)
          - linting
@@ -50,7 +50,7 @@ and have them highlighted using a number of code formatting styles.
          - [safety](https://pypi.org/project/safety/)(python package vulnerability testing) (`nox -s safety`)
          - [pytest](https://docs.pytest.org/en/latest/) sessions with
            [pytest-cov](https://pypi.org/project/pytest-cov/) &
-           [pytest-django](https://pypi.org/project/pytest-django/) (`coverage run -m pytest`) 
+           [pytest-django](https://pypi.org/project/pytest-django/) (`coverage run -m pytest`)
 
 ---
 
@@ -71,7 +71,7 @@ and have them highlighted using a number of code formatting styles.
          (loads Django shell autoloading project models & classes)
        - `docker run -it django-start-web bash`
          (CLI access to container)
- - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/admin/
+ - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/resources/
 
 ---
 
@@ -132,7 +132,7 @@ TBD
 ### Login Page
 ![Login Page](images/pastebin-drf-api_sign-in.png)
 
-### Snippet 
+### Snippet
 ![Snippet](images/pastebin-drf-api_snippet.png)
 ### Snippet List View
 ![Snippet List View](images/pastebin-drf-api_snippet-list-view.png)
