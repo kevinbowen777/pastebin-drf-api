@@ -22,15 +22,16 @@ source = ["accounts", "config", "pages", "snippets"]
 branch = true
 source = ["config"]
 omit = [
-    "*conftest.py",
+    "*/__init__.py",
     "*manage.py",
     "*settings*.py",
-    "*test.py",
+    "*urls.py",
+    "*admin.py",
+    "*migrations/*",
+    "*tests/*",
+    "*test_*.py",
+    "*tests.py",
     "*wsgi.py",
-    "*/__init__.py",
-    "*/migrations/*",
-    "*/factories.py",
-    "*/tests/*",
 ]
 plugins = [
     "django_coverage_plugin",
