@@ -359,9 +359,9 @@ dj-database-url==1.2.0 ; python_version >= "3.10" and python_version < "4.0" \
 dj-email-url==1.0.6 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:55ffe3329e48f54f8a75aa36ece08f365e09d61f8a209773ef09a1d4760e699a \
     --hash=sha256:cbd08327fbb08b104eac160fb4703f375532e4c0243eb230f5b960daee7a96db
-django==4.1.5 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:4b214a05fe4c99476e99e2445c8b978c8369c18d4dea8e22ec412862715ad763 \
-    --hash=sha256:ff56ebd7ead0fd5dbe06fe157b0024a7aaea2e0593bb3785fb594cf94dad58ef
+django==4.1.6 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:bceb0fe1a386781af0788cae4108622756cd05e7775448deec04a71ddf87685d \
+    --hash=sha256:c6fe7ebe7c017fe59f1029821dae0acb5a2ddcd6c9a0138fd20a8bfefac914bc
 django-allauth==0.52.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:e380661ceafe55734c40102819ae720403027036f28e9f9827f0faeddc24ed5f
 django-bootstrap4==22.3 ; python_version >= "3.10" and python_version < "4.0" \
@@ -801,9 +801,9 @@ platformdirs==2.6.2 ; python_version >= "3.10" and python_version < "4.0" \
 pluggy==1.0.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159 \
     --hash=sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3
-pre-commit==2.21.0 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:31ef31af7e474a8d8995027fefdfcf509b5c913ff31f2015b4ec4beb26a6f658 \
-    --hash=sha256:e2f91727039fc39a92f58a588a25b87f936de6567eed4f0e673e0507edc75bad
+pre-commit==3.0.4 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:9e3255edb0c9e7fe9b4f328cb3dc86069f8fdc38026f1bf521018a05eaf4d67b \
+    --hash=sha256:bc4687478d55578c4ac37272fe96df66f73d9b5cf81be6f28627d4e712e752d5
 prompt-toolkit==3.0.36 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:3e163f254bef5a03b146397d7c1963bd3e2812f0964bb9a24e6ec761fd28db63 \
     --hash=sha256:aa64ad242a462c5ff0363a7b9cfe696c20d55d9fc60c11fd8e632d064804d305
