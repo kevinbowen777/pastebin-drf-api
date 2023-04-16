@@ -8,7 +8,7 @@
 
 </div>
 
-- A simple pastebin code highlighting Web API
+- A simple pastebin code highlighting Web API built with the Django 4.2.x web framework and the Django REST Framework(DRF).
 
 A browsable Web API built using Django REST Framework(DRF) that allows
 authenticated users to post code snippets in the language of their choice
