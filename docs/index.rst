@@ -7,6 +7,8 @@ pastebin-drf-api
 
    license
    package_index
+   create_new_users
+   add_code_list
 
 .. contents:: Table of Contents
    :local:
