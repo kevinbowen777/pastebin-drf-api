@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sites",
     # third-party apps
-    "bootstrap4",
     "crispy_forms",
     "crispy_bootstrap4",
     "rest_framework",

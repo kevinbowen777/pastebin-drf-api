@@ -41,11 +41,16 @@ Sample Snippet list
 
     Snippet = Snippet.objects.create(
         title="Say hello function",
-        code="",
+        code="""
+            def say_hello(name):
+            print(name)
+            name = 'Kevin'
+            say_hello(name)
+        """,
         linenos="False",
         language="Python",
-        style="friendly",
-        owner=User.objects.get(username="mary"),
+        style="colorful",
+        owner=User.objects.first(),
     )
 
     Snippet = Snippet.objects.create(
@@ -54,7 +59,7 @@ Sample Snippet list
         linenos="False",
         language="Python",
         style="friendly",
-        owner=User.objects.get(username="alic"),
+        owner=User.objects.get(username="alice"),
     )
 
     Snippet = Snippet.objects.create(
