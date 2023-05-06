@@ -94,7 +94,7 @@ flake8-docstrings = "^1.6.0"
 safety = "2.4.0b1"
 factory-boy = "3.0.1"
 pip-check = "^2.7"
-pip-audit = "^2.4.3"
+pip-audit = "^2.5"
 Sphinx = "^6.1.0"
 flake8-import-order = "^0.18.2"
 
