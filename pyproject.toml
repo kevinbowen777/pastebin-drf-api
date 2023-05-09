@@ -52,7 +52,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Django = "4.2.0"
+Django = "4.2.1"
 djangorestframework = "^3.13.1"
 django-extensions = "^3.2"
 Pygments = "^2.11.2"
