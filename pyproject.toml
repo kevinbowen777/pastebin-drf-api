@@ -7,10 +7,9 @@ exclude = '''
   | __pycache__
   | .pytest_cache
   | .venv
+  | staticfiles
   | build
   | dist
-  | snippets/migrations/*
-  | snippets/migrations
   | ^.*\b(migrations)\b.*$
 )/
 '''
@@ -95,7 +94,8 @@ safety = "2.4.0b1"
 factory-boy = "3.0.1"
 pip-check = "^2.7"
 pip-audit = "^2.5"
-Sphinx = "^7.0.0"
+Sphinx = "6.2.1"
+sphinx-rtd-theme = "^1.2.0"
 flake8-import-order = "^0.18.2"
 
 [tool.pytest.ini_options]
