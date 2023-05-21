@@ -44,7 +44,7 @@ show_missing = true
 
 [tool.poetry]
 name = "pastebin-drf-api"
-version = "0.1.0"
+version = "0.2.0"
 description = "A simple pastebin code highlighting Web API"
 authors = [
     "Kevin Bowen <kevin.bowen@gmail.com>",
