@@ -18,9 +18,7 @@ class Snippet(models.Model):
     language = models.CharField(
         choices=LANGUAGE_CHOICES, default="python", max_length=100
     )
-    style = models.CharField(
-        choices=STYLE_CHOICES, default="friendly", max_length=100
-    )
+    style = models.CharField(choices=STYLE_CHOICES, default="friendly", max_length=100)
     owner = models.ForeignKey(
         get_user_model(), related_name="snippets", on_delete=models.CASCADE
     )
@@ -28,6 +26,9 @@ class Snippet(models.Model):
 
     class Meta:
         ordering = ("created",)
+
+    def __str__(self):
+        return self.title
 
     def save(self, *args, **kwargs):
         """
@@ -42,6 +43,3 @@ class Snippet(models.Model):
         )
         self.highlighted = highlight(self.code, lexer, formatter)
         super().save(*args, **kwargs)
-
-    def __str__(self):
-        return self.title
