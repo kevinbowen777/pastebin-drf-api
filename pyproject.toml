@@ -123,7 +123,7 @@ pip-check = "^2.7"
 pip-audit = "^2.5"
 Sphinx = "6.2.1"
 sphinx-rtd-theme = "^1.2.0"
-ruff = "^0.0.269"
+ruff = "^0.0.270"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
