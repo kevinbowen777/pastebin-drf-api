@@ -121,7 +121,7 @@ safety = "2.4.0b1"
 factory-boy = "3.0.1"
 Sphinx = "6.2.1"
 sphinx-rtd-theme = "^1.2.0"
-ruff = "^0.0.272"
+ruff = "^0.0.275"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
