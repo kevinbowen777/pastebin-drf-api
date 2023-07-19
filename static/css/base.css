@@ -33,3 +33,8 @@ li.no-bullets {
   padding: 0; /*  Remove padding */
   margin: 0; /* Remove margins */
 }
+
+.copyright {
+  color: white;
+  font-size: 70%;
+}
