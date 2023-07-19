@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
-  <p>
-    <h2>All code snippets</h2>
-    {% for snippet in object_list %}
-      <ul>
-        <li>Title: {{ snippet.title }}</li>
-        <li>Code: {{ snippet.code }}</li>
-        <li>Author: {{ snippet.owner }}</li>
-       </ul>
-    {% endfor %}
-  </p>
-</div>
+  <div class="container">
+    <p>
+      <h2>All code snippets</h2>
+      {% for snippet in object_list %}
+        <ul>
+          <li>Title: {{ snippet.title }}</li>
+          <li>Code: {{ snippet.code }}</li>
+          <li>Author: {{ snippet.owner }}</li>
+        </ul>
+      {% endfor %}
+    </p>
+  </div>
 {% endblock content %}

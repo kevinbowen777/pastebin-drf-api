@@ -1,6 +1,9 @@
 {% extends "base.html" %}
+{# djlint:off D018 #}
 
-{% block title %}Welcome Home{% endblock title %}
+{% block title %}
+  Welcome Home
+{% endblock title %}
 
 {% block content %}
   <div class="jumbotron">
@@ -8,14 +11,17 @@
 
     {% if user.is_authenticated %}
 
-      <a class="btn btn-lg btn-primary" href="api/v1/" role="button">Browse the API &raquo;</a>
+      <a class="btn btn-lg btn-primary" href="api/v1/" role="button">Browse the API »</a>
     {% else %}
 
-    <p class="lead">A pastebin API made with Django and the Django REST
-    framework.</p>
+      <p class="lead">
+        A pastebin API made with Django and the Django REST
+        framework.
+      </p>
 
-      <a class="btn btn-lg btn-primary" href="{% url 'account_signup' %}"
-        role="button">Register &raquo;</a>
+      <a class="btn btn-lg btn-primary"
+         href="{% url 'account_signup' %}"
+         role="button">Register »</a>
     {% endif %}
   </div>
 {% endblock content %}
