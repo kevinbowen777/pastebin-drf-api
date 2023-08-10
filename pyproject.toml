@@ -96,33 +96,37 @@ exclude = '''
 )/
 '''
 
-[tool.coverage.paths]
-source = ["accounts", "config", "pages", "snippets"]
-
 [tool.coverage.run]
 branch = true
-source = ["config"]
+dynamic_context = "test_function"
+source = ["accounts", "config", "pages", "snippets"]
 omit = [
+    "conftest.py",
+    "manage.py",
+    "settings*.py",
+    "*test.py",
+    "asgi.py",
+    "wsgi.py",
+    "gunicorn.py",
     "*/__init__.py",
-    "*manage.py",
-    "*settings*.py",
-    "*urls.py",
-    "*admin.py",
-    "*migrations/*",
-    "*tests/*",
-    "*test_*.py",
-    "*tests.py",
-    "*wsgi.py",
+    "*/migrations/*",
+    "*/factories.py",
+    "*/tests/*",
 ]
 plugins = [
     "django_coverage_plugin",
 ]
 
 [tool.coverage.django_coverage_plugin]
-template_extensions = "html, txt, tex, email"
+template_extensions = "html"
 
 [tool.coverage.report]
 show_missing = true
+precision = 2
+
+[tool.coverage.html]
+show_contexts = true
+title = "pastebin-drf-api coverage report"
 
 [tool.djlint]
 exclude="htmlcov"

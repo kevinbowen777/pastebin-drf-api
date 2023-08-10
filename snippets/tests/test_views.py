@@ -3,7 +3,7 @@ from django.urls import reverse  # noqa:F401
 from rest_framework import status  # noqa:F401
 from rest_framework.test import APITestCase
 
-from .models import Snippet
+from ..models import Snippet
 
 
 class SnippetTests(APITestCase):
