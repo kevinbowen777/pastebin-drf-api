@@ -79,6 +79,8 @@ pyopenssl = "^23.2.0"
 djlint = "^1.31.1"
 sphinx = ">= 7.2.5, < 7.3.0"
 furo = "^2023.7.26"
+django-types = "^0.18.0"
+djangorestframework-types = "^0.8.0"
 
 [tool.black]
 line-length = 88
@@ -133,6 +135,41 @@ exclude="htmlcov"
 files=["templates/"]
 indent=2
 preserve_blank_lines=true
+
+[tool.pyright]
+include = ["accounts", "config", "pages", "snippets"]
+exclude = ["**/tests",
+    "**/__pycache__",
+    "**/migrations",
+]
+ignore = ["docs/_build"]
+defineConstant = { DEBUG = true }
+stubPath = ""
+venv = "pastebin-drf-api-H4LsZ2l5-py3.11"
+venvPath = "../../../venvs"
+
+typeCheckingMode = "basic"
+useLibraryCodeForTypes = true
+strictListInference = true
+strictDictionaryInference = true
+reportConstantRedefinition = "error"
+reportOptionalCall = "error"
+reportOptionalContextManager = "error"
+reportOptionalIterable = "error"
+reportOptionalMemberAccess = "error"
+reportMissingImports = true
+reportOptionalOperand = "error"
+reportOptionalSubscript = "error"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "error"
+reportUnnecessaryTypeIgnoreComment = "warning"
+
+pythonVersion = "3.11"
+pythonPlatform = "Linux"
+
+executionEnvironments = [
+  { root = ".", pythonVersion = "3.11", extraPaths = [ "accounts", "config", "pages", "snippets"] },
+]
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.test"
