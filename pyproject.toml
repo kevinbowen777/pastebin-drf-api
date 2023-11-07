@@ -54,7 +54,7 @@ django-countries = "^7.3.2"
 Pillow = "^10.0"
 django-crispy-forms = "^2.0"
 drf-spectacular = "^0.26.0"
-crispy-bootstrap4 = "^2022.1"
+crispy-bootstrap4 = "^2023.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.0.0"
