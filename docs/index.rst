@@ -140,11 +140,12 @@ Testing
    $ coverage run -m pytest
    $ nox --list-sessions
    $ nox
-   $ nox -s black-3.12 
-   $ nox -s docs-3.11 
-   $ nox -rs lint-3.9  (Use the 'r' flag to reuse existing session)
+   $ nox -s black-3.12
+   $ nox -s docs-3.11
+   $ nox -rs lint-3.10  (Use the 'r' flag to reuse existing session)
+   $ nox -s pyright-3.11
    $ nox -s safety  (will run tests against all Python versions)
-   $ nox -s tests 
+   $ nox -s tests
 
 Application Demo
 ----------------
