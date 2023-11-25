@@ -39,14 +39,12 @@ and have them highlighted using a number of code formatting styles.
      - [Debug-toolbar](https://pypi.org/project/django-debug-toolbar/) available. See notes in `config/settings.py` for enabling.
      - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
      - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
-     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12
+     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.10, 3.11, and 3.12
          - [black](https://pypi.org/project/black/) (`nox -s black`)
          - [Sphinx](https://pypi.org/project/Sphinx/) documentaion generation (`nox -s lint`)
-         - linting
-             - [flake8](https://pypi.org/project/flake8/)
-             - [flake8-bandit](https://pypi.org/project/flake8-bandit/)
-             - [flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
-             - [flake8-import-order](https://pypi.org/project/flake8-import-order/)
+         - linting (`nox -s lint`)
+             - [ruff](https://pypi.org/project/ruff/)
+             - [djlint](https://pypi.org/project/djlint/)
          - [safety](https://pypi.org/project/safety/)(python package vulnerability testing) (`nox -s safety`)
          - [pytest](https://docs.pytest.org/en/latest/) sessions with
            [pytest-cov](https://pypi.org/project/pytest-cov/) &
@@ -87,13 +85,14 @@ able to run `run` instead of `./run`.*
 ### Testing
  - `docker compose exec web python manage.py test`
  - `coverage run -m pytest`
- - Nox (includes sessions for black, lint, safety, tests)
-     - testing supported for Python 3.9, 3.10, 3.11, 3.12
+ - Nox (includes sessions for black, lint, typing, safety, tests)
+     - testing supported for Python 3.10, 3.11, 3.12
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
        - `nox`
        - `nox -s black-3.12`
        - `nox -s docs-3.11`
-       - `nox -rs lint-3.9` (Use the 'r' flag to reuse existing session)
+       - `nox -rs lint-3.10` (Use the 'r' flag to reuse existing session)
+       - `nox -s pyright-3.11`
        - `nox -s safety` (will run tests against all Python versions)
        - `nox -s tests`
 
