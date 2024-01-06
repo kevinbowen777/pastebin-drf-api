@@ -24,9 +24,7 @@ class TestUserUpdateView:
     def dummy_get_response(self, request: HttpRequest):
         return None
 
-    def test_get_success_url(
-        self, user: CustomUser, request_factory: RequestFactory
-    ):
+    def test_get_success_url(self, user: CustomUser, request_factory: RequestFactory):
         view = UserUpdateView()
         request = request_factory.get("/fake-url/")
         request.user = user
@@ -35,9 +33,7 @@ class TestUserUpdateView:
 
         assert view.get_success_url() == f"/accounts/{user.username}/"
 
-    def test_get_object(
-        self, user: CustomUser, request_factory: RequestFactory
-    ):
+    def test_get_object(self, user: CustomUser, request_factory: RequestFactory):
         view = UserUpdateView()
         request = request_factory.get("/fake-url/")
         request.user = user
@@ -46,9 +42,7 @@ class TestUserUpdateView:
 
         assert view.get_object() == user
 
-    def test_form_valid(
-        self, user: CustomUser, request_factory: RequestFactory
-    ):
+    def test_form_valid(self, user: CustomUser, request_factory: RequestFactory):
         view = UserUpdateView()
         form_data = {"name": "John Doe"}
         request = request_factory.post(reverse("user_update"), form_data)
@@ -73,9 +67,7 @@ class TestUserUpdateView:
 
 
 class TestUserRedirectView:
-    def test_get_redirect_url(
-        self, user: CustomUser, request_factory: RequestFactory
-    ):
+    def test_get_redirect_url(self, user: CustomUser, request_factory: RequestFactory):
         view = UserRedirectView()
         request = request_factory.get("/fake-url")
         request.user = user
