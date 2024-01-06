@@ -44,7 +44,7 @@ Features
      * `black <https://pypi.org/project/black/>`_
      * `Sphinx <https://pypi.org/project/Sphinx/>`_ documentaion generation
      * linting
-       
+
        * `flake8 <https://pypi.org/project/flake8/>`_
        * `flake8-bandit <https://pypi.org/project/flake8-bandit/>`_
        * `flake8-bugbear <https://pypi.org/project/flake8-bugbear/>`_
