@@ -27,6 +27,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -35,7 +36,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Django = "5.0"
+Django = "5.0.1"
 
 django-allauth = ">=0.54.0, < 0.60.0"
 djangorestframework = "^3.13.1"
