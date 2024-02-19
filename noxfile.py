@@ -1,4 +1,5 @@
 """Nox sessions - pastebin-drf-api."""
+
 import tempfile
 
 import nox
