@@ -1,4 +1,5 @@
 """Views for pastebin-drf-api user accounts."""
+
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse, reverse_lazy

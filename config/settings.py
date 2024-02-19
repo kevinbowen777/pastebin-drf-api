@@ -1,4 +1,5 @@
 """Settings for the pastebin-drf-api project."""
+
 from pathlib import Path
 
 # import socket  # noqa: E402 # Comment out if not using debug_toolbar
