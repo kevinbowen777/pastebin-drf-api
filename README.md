@@ -5,7 +5,7 @@
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
   [![GitHub Issues](https://img.shields.io/github/issues/kevinbowen777/pastebin-drf-api.svg)](https://github.com/kevinbowen777/pastebin-drf-api/issues)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-  [![Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/kevinbowen777/261b3eac2838cf0bc3b365335c8323df/raw/covbadge.json)](../htmlcov/index.html)
+  [![Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/kevinbowen777/261b3eac2838cf0bc3b365335c8323df/raw/covbadge.json)](htmlcov/index.html)
 
 </div>
 
@@ -148,12 +148,6 @@ TBD
 
 ### Snippet List Detail
 ![Snippet List Detail](images/pastebin-drf-api_snippet-list-detail.png)
-
-### Swagger-UI
-![Swagger-UI](images/pastebin-drf-api_swagger-ui.png)
-
-### Redoc API page
-![Redoc API page](images/pastebin-drf-api_redoc-tree.png)
 
 ### Email Address management
 ![Email Address management](images/pastebin-drf-api_email-addresses.png)
