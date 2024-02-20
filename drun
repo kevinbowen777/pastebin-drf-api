@@ -88,6 +88,11 @@ function nox:black {
   cmd nox -s black-3.12 "${@}"
 }
 
+function nox:cov {
+  # Check code for test coverage
+  cmd nox -s coverage-3.12 "${@}"
+}
+
 function nox:docs {
   # Create Sphinx documentation in ./docs/_build directory
   cmd nox -s docs-3.12 "${@}"

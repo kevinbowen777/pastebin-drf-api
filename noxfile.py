@@ -54,6 +54,17 @@ def black(session):
 
 
 @nox.session(python=PYTHON_VERSIONS)
+def coverage(session):
+    """Build JSON coverage report."""
+    install_with_constraints(session, "coverage")
+    session.run("coverage", "run", "-p", "-m", "pytest")
+    session.run("coverage", "combine")
+    session.run("coverage", "report", "-m", "--skip-covered")
+    session.run("coverage", "json", "-o", "htmlcov/coverage.json")
+    session.run("coverage", "html")
+
+
+@nox.session(python=PYTHON_VERSIONS)
 def docs(session):
     """Build the documentation."""
     install_with_constraints(session, "sphinx")
