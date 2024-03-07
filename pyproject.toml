@@ -38,29 +38,28 @@ classifiers = [
 python = "^3.10"
 Django = "5.0.2"
 
-djangorestframework = "^3.13.1"
-django-allauth = ">=0.60.0, <= 0.70.0"
+django-allauth = ">=0.60.0, < 0.70"
 environs = { version = "^10", extras = ["django"] }
 django-extensions = "^3.2"
+whitenoise = "^6.1.0"
+psycopg2-binary = "^2.9.5"
+Pillow = "^10.0"
+gunicorn = "^21.0"
+djangorestframework = "^3.13.1"
 Pygments = "^2.11.2"
 dj-database-url = "^2.0.0"
 dj-email-url = "^1.0.5"
 django-cache-url = "^3.4.0"
-psycopg2-binary = "^2.9.5"
-whitenoise = "^6.1.0"
-gunicorn = "^21.0"
+crispy-bootstrap4 = "^2024.0"
 django-crispy-forms = "^2.0"
-drf-spectacular = "^0.26.0"
-Pillow = "^10.0"
 django-countries = "^7.3.2"
-crispy-bootstrap4 = "^2023.1"
+drf-spectacular = "^0.26.0"
 
 [tool.poetry.group.dev.dependencies]
 django-debug-toolbar = "^4.0.0"
 pre-commit = "^3.0.0"
-ruff = ">=0.1.0, <=0.2.9"
+ruff = ">=0.1.0, <=0.3.9"
 nox = "2023.4.22"
-black = "^24.0"
 pytest = "^8.0"
 pytest-cov = "^4.0.0"
 pytest-django = "^4.5.2"
@@ -68,7 +67,7 @@ pytest-sugar = "^1.0"
 django-pytest = "^0.2.0"
 coverage = { version = "^7.0.0", extras = ["toml"] }
 django-coverage-plugin = "^3.0.0"
-djlint = "^1.31.1"
+djlint = "^1.31.0"
 sphinx-lint = "^0.9.1"
 safety = "^3.0"
 factory-boy = "3.0.1"
@@ -76,29 +75,13 @@ ipython = "^8.4.0"
 friendly = "^0.7.0"
 colorama = "^0.4.4"
 werkzeug = "^3.0"
-pyopenssl = "^24.0"
+pyopenssl = ">=24.0, < 25.0"
 sphinx = ">= 7.2.5, < 7.3.0"
 furo = "^2024.0"
 django-types = "^0.19.0"
 djangorestframework-types = "^0.8.0"
 httpie = "^3.1.0"
 
-[tool.black]
-line-length = 88
-# include = [
-#]
-exclude = '''
-/(
-    \.git
-  | __pycache__
-  | .pytest_cache
-  | .venv
-  | staticfiles
-  | build
-  | dist
-  | ^.*\b(migrations)\b.*$
-)/
-'''
 
 [tool.coverage.run]
 branch = true
@@ -133,16 +116,17 @@ show_contexts = true
 title = "pastebin-drf-api coverage report"
 
 [tool.djlint]
-exclude=["htmlcov", "staticfiles"]
-files=["templates/"]
-indent=2
-max_line_length=120
-preserve_blank_lines=true
+exclude = ["htmlcov", "staticfiles"]
+files = ["templates/"]
+indent = 2
+max_line_length = 120
+preserve_blank_lines = true
 
 [tool.pyright]
 # See: https://github.com/microsoft/pyright/blob/main/docs/configuration.md
 include = ["accounts", "config", "pages", "snippets"]
-exclude = ["**/tests",
+exclude = [
+    "**/tests",
     "**/__pycache__",
     "**/migrations",
 ]
