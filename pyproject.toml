@@ -37,6 +37,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = "5.0.2"
+djangorestframework = "3.14.0"
 
 django-allauth = ">=0.60.0, < 0.70"
 environs = { version = "^10", extras = ["django"] }
@@ -45,7 +46,6 @@ whitenoise = "^6.1.0"
 psycopg2-binary = "^2.9.5"
 Pillow = "^10.0"
 gunicorn = "^21.0"
-djangorestframework = "^3.13.1"
 Pygments = "^2.11.2"
 dj-database-url = "^2.0.0"
 dj-email-url = "^1.0.5"
