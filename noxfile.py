@@ -71,7 +71,7 @@ def lint(session):
         session,
         "ruff",
     )
-    session.run("ruff", "check", *args)
+    session.run("ruff", "check", ".", *args)
 
 
 @nox.session(python=PYTHON_VERSIONS)
