@@ -44,7 +44,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Django = "5.0.3"
+Django = "5.0.4"
 djangorestframework = ">=3.15.0, <3.16.0"
 drf-spectacular = "^0.27.0"
 
@@ -54,7 +54,7 @@ django-extensions = "^3.2"
 whitenoise = "^6.1.0"
 psycopg2-binary = "^2.9.5"
 Pillow = "^10.0"
-gunicorn = "^21.0"
+gunicorn = "^22.0"
 Pygments = "^2.11.2"
 dj-database-url = "^2.0.0"
 dj-email-url = "^1.0.5"
@@ -66,7 +66,7 @@ django-countries = "^7.3.2"
 [tool.poetry.group.dev.dependencies]
 django-debug-toolbar = "^4.0.0"
 pre-commit = "^3.0.0"
-ruff = ">=0.1.0, <=0.3.9"
+ruff = ">=0.3.0, <=0.4.9"
 nox = "2024.3.2"
 pytest = "^8.0"
 pytest-cov = ">=5.0, <6.0"
