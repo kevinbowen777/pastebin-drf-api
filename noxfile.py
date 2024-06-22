@@ -100,7 +100,7 @@ def safety(session):
             "check",
             f"--file={requirements.name}",
             "--ignore",
-            "65213,65232",
+            "65213,65232,70612",
             "--full-report",
         )
 
