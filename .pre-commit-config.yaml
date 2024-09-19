@@ -28,7 +28,7 @@ repos:
         files: (^|/)a/.+\.(py|html|sh|css|js)$
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.6.2
+    rev: v0.6.5
     hooks:
       # Run the linter
       - id: ruff
@@ -37,7 +37,7 @@ repos:
       - id: ruff-format
 
   - repo: https://github.com/Riverside-Healthcare/djLint
-    rev: v1.34.1
+    rev: v1.35.2
     hooks:
       - id: djlint-reformat-django
         exclude: "htmlcov"
@@ -45,7 +45,7 @@ repos:
         exclude: "htmlcov"
 
   - repo: https://github.com/sphinx-contrib/sphinx-lint
-    rev: v0.9.1
+    rev: v1.0.0
     hooks:
       - id: sphinx-lint
 
