@@ -17,9 +17,7 @@ DEBUG = env.bool("DJANGO_DEBUG", default=False)
 
 ALLOWED_HOSTS = ["pastebin-drf-api.cool", "localhost", "127.0.0.1"]
 
-
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.admindocs",
@@ -30,20 +28,20 @@ INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
     "django.contrib.sites",
-    # third-party apps
+    # Third-party Applications
+    # "debug_toolbar",
     "crispy_forms",
     "crispy_bootstrap4",
+    "django_countries",
+    "django_extensions",
     "rest_framework",
     "rest_framework.authtoken",
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.github",
-    # "debug_toolbar",
-    "django_countries",
-    "django_extensions",
     "drf_spectacular",
-    # Local apps
+    # Local Applications
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
     "snippets.apps.SnippetsConfig",
@@ -93,7 +91,7 @@ DATABASES = {
             "DATABASE_URL", default="postgres://postgres@db/postgres"
         ),
         "NAME": env.str("POSTGRES_DB", "postgres"),
-        "USER": env.str("POSTGRES_USER", "fakeuser"),
+        "USER": env.str("POSTGRES_USER", default="fakeuser"),
         "PASSWORD": env.str("POSTGRES_PASSWORD", "password"),
         "HOST": env.str("POSTGRES_HOST", "db"),
         "PORT": env.int("POSTGRES_PORT", "5432"),
@@ -116,13 +114,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "America/Vancouver"
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 
