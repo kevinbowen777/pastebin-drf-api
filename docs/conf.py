@@ -2,7 +2,7 @@
 
 project = "pastebin-drf-api"
 author = "Kevin Bowen"
-copyright = f"2024, {author}"
+copyright = f"2025, {author}"
 #
 html_theme = "furo"
 html_logo = "django_24.png"
