@@ -101,16 +101,16 @@ DATABASES = {
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa:E501,B950
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa:E501
     },
     {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa:E501,B950
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa:E501
     },
     {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa:E501,B950
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa:E501
     },
     {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa:E501,B950
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa:E501
     },
 ]
 
@@ -153,7 +153,7 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.TokenAuthentication",
     ],
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
-    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",  # noqa:E501,B950
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",  # noqa:E501
     "PAGE_SIZE": 5,
 }
 
