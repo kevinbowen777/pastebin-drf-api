@@ -2,7 +2,7 @@
 name = "pastebin-drf-api"
 version = "0.3.2"
 description = "A simple pastebin code highlighting Web API"
-requires-python = ">=3.10.0, <3.14.0"
+requires-python = ">=3.11.0, <3.14.0"
 dependencies = [
     "Django (==5.2)",
     "djangorestframework (>=3.16.0, <3.17.0)",
@@ -43,7 +43,6 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
