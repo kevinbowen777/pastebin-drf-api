@@ -1,7 +1,7 @@
 pastebin-drf-api
 ================
 
-The pastebin-drf-api_ API is built using the Django 5.1.x and Django REST Framework (DRF) 3.15.x and is part of the collection of `Web Framework Projects`_ .
+The pastebin-drf-api_ API is built using the Django 5.2.x and Django REST Framework (DRF) 3.16.x and is part of the collection of `Web Framework Projects`_ .
 
 .. _pastebin-drf-api: https://github.com/kevinbowen777/pastebin-drf-api
 .. _Web Framework Projects: https://github.com/kevinbowen777/web-project-index
