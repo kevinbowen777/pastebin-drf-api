@@ -398,9 +398,9 @@ django-pytest==0.2.0 ; python_full_version >= "3.10.0" and python_full_version <
 django-types==0.20.0 ; python_version >= "3.10" and python_version < "3.14" \
     --hash=sha256:4e55d2c56155e3d69d75def9eb1d95a891303f2ac19fccf6fe8056da4293fae7 \
     --hash=sha256:a0b5c2c9a1e591684bb21a93b64e50ca6cb2d3eab48f49faff1eac706bd3a9c7
-djangorestframework==3.15.2 ; python_version >= "3.10" and python_full_version < "3.14.0" \
-    --hash=sha256:2b8871b062ba1aefc2de01f773875441a961fefbf79f5eed1e32b2f096944b20 \
-    --hash=sha256:36fe88cd2d6c6bec23dca9804bab2ba5517a8bb9d8f47ebc68981b56840107ad
+djangorestframework==3.16.0 ; python_version >= "3.10" and python_full_version < "3.14.0" \
+    --hash=sha256:bea7e9f6b96a8584c5224bfb2e4348dfb3f8b5e34edbecb98da258e892089361 \
+    --hash=sha256:f022ff46613584de994c0c6a4aebbace5fd700555fbe9d33b865ebf173eba6c9
 djangorestframework-types==0.9.0 ; python_version >= "3.10" and python_version < "3.14" \
     --hash=sha256:5e4258fe43774d0a3d018780170bd702bf615407fe244453ea5ec6e6676b98c4 \
     --hash=sha256:aa6b27fbdab5ff4ab1dfa5376f3b6ec45713ce48dbcdd4226bf3e1410f0deaca
