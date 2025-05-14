@@ -4,13 +4,13 @@ version = "0.3.3"
 description = "A simple pastebin code highlighting Web API"
 requires-python = ">=3.11.0, <3.14.0"
 dependencies = [
-    "Django (==5.2)",
+    "Django (==5.2.1)",
     "djangorestframework (>=3.16.0, <3.17.0)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (>=11.0, <15.0)",
     "django-extensions (>=4.1.0, <4.2.0)",
     "whitenoise (>=6.9.0, <7.0.0)",
-    "psycopg[binary] (==3.2.7)",
+    "psycopg[binary] (==3.2.9)",
     "Pillow (>=11.0, <12.0)",
     "gunicorn (>=23.0.0, <24.0.0)",
     "Pygments (==2.19.1)",
