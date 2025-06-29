@@ -208,12 +208,12 @@ psycopg-binary==3.2.9 ; python_version >= "3.11" and python_full_version < "3.14
     --hash=sha256:f34e88940833d46108f949fdc1fcfb74d6b5ae076550cd67ab59ef47555dba95 \
     --hash=sha256:fa5c80d8b4cbf23f338db88a7251cef8bb4b68e0f91cf8b6ddfa93884fdbb0c1 \
     --hash=sha256:fb7599e436b586e265bea956751453ad32eb98be6a6e694252f4691c31b16edb
-pygments==2.19.1 ; python_version >= "3.11" and python_full_version < "3.14.0" \
-    --hash=sha256:61c16d2a8576dc0649d9f39e089b5f02bcd27fba10d8fb4dcc28173f7a45151f \
-    --hash=sha256:9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c
-python-dotenv==1.1.0 ; python_version >= "3.11" and python_full_version < "3.14.0" \
-    --hash=sha256:41f90bc6f5f177fb41f53e87666db362025010eb28f60a01c9143bfa33a2b2d5 \
-    --hash=sha256:d7c01d9e2293916c18baf562d95698754b0dbbb5e74d457c45d4f6561fb9d55d
+pygments==2.19.2 ; python_version >= "3.11" and python_full_version < "3.14.0" \
+    --hash=sha256:636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887 \
+    --hash=sha256:86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b
+python-dotenv==1.1.1 ; python_version >= "3.11" and python_full_version < "3.14.0" \
+    --hash=sha256:31f23644fe2602f88ff55e1f5c79ba497e01224ee7737937930c448e4d0e24dc \
+    --hash=sha256:a8a6399716257f45be6a007360200409fce5cda2661e3dec71d23dc15f6189ab
 pyyaml==6.0.2 ; python_version >= "3.11" and python_full_version < "3.14.0" \
     --hash=sha256:01179a4a8559ab5de078078f37e5c1a30d76bb88519906844fd7bdea1b7729ff \
     --hash=sha256:0833f8694549e586547b576dcfaba4a6b55b9e96098b36cdc7ebefe667dfed48 \
