@@ -4,7 +4,7 @@ version = "0.3.3"
 description = "A simple pastebin code highlighting Web API"
 requires-python = ">=3.11.0, <3.14.0"
 dependencies = [
-    "Django (==5.2.5)",
+    "Django (==5.2.6)",
     "djangorestframework (>=3.16.0, <3.17.0)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (>=11.0, <15.0)",
