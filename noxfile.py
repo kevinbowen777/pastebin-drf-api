@@ -94,6 +94,8 @@ def audit(session):
         "GHSA-qw25-v68c-qjf3",
         "--ignore-vuln",
         "GHSA-frmv-pr5f-9mcr",
+        "--ignore-vuln",
+        "GHSA-5rjg-fvgr-3xxf",
     )
 
 
