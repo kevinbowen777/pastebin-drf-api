@@ -37,9 +37,9 @@ djangorestframework==3.16.1 ; python_version >= "3.11" and python_full_version <
 drf-spectacular==0.29.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:0a069339ea390ce7f14a75e8b5af4a0860a46e833fd4af027411a3e94fc1a0cc \
     --hash=sha256:d1ee7c9535d89848affb4427347f7c4a22c5d22530b8842ef133d7b72e19b41a
-environs==14.5.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
-    --hash=sha256:1abd3e3a5721fb09797438d6c902bc2f35d4580dfaffe68b8ee588b67b504e13 \
-    --hash=sha256:f7b8f6fcf3301bc674bc9c03e39b5986d116126ffb96764efd34c339ed9464ee
+environs==14.6.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
+    --hash=sha256:ed2767588deb503209ffe4dd9bb2b39311c2e4e7e27ce2c64bf62ca83328d068 \
+    --hash=sha256:f8fb3d6c6a55872b0c6db077a28f5a8c7b8984b7c32029613d44cef95cfc0812
 gunicorn==23.0.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:ec400d38950de4dfd418cff8328b2c8faed0edb0d517d3394e457c317908ca4d \
     --hash=sha256:f014447a0101dc57e294f6c18ca6b40227a4c90e9bdb586042628030cba004ec
