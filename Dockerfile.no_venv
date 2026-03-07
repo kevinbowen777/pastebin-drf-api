@@ -1,5 +1,5 @@
 # `python-base` sets up all our shared environment variables
-FROM python:3.12-slim-bookworm AS python-base
+FROM python:3.14-slim-trixie AS python-base
 LABEL maintainer="Kevin Bowen <kevin.bowen@gmail.com>"
 
 ENV DEBUG="${DEBUG}" \
@@ -23,11 +23,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   && apt-get clean
 
 COPY poetry.lock pyproject.toml /code/
+COPY bin/poetry-install /code/
+
+ARG ENV
+RUN chmod 0755 /code/poetry-install
 
 WORKDIR /code
 
-RUN curl -sSL https://install.python-poetry.org | python3 - --version 1.8.2 \
+RUN curl -sSL https://install.python-poetry.org | python3 - --version 2.3.2 \
     && poetry config virtualenvs.create false \
-    && poetry install --no-interaction --no-ansi
+    && /code/poetry-install
+    # && poetry install --no-interaction --no-ansi
 
 COPY . /code/
