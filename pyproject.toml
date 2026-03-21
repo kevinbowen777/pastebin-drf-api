@@ -4,8 +4,8 @@ version = "0.3.3"
 description = "A simple pastebin code highlighting Web API"
 requires-python = ">=3.11.0"
 dependencies = [
-    "Django (==5.2.11)",
-    "djangorestframework (>=3.16.0, <3.17.0)",
+    "Django (==5.2.12)",
+    "djangorestframework (==3.17.0)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (>=11.0, <15.0)",
     "django-extensions (>=4.1.0, <4.2.0)",
@@ -14,12 +14,12 @@ dependencies = [
     "Pillow (>=12.0, <13.0)",
     "gunicorn (>=25.1.0, <26.0.0)",
     "Pygments (==2.19.2)",
-    "dj-database-url (==3.0.1)",
+    "dj-database-url (==3.1.2)",
     "dj-email-url (==1.0.6)",
-    "django-cache-url (==3.4.5)",
+    "django-cache-url (==3.4.6)",
     # crispy-bootstrap4 uses calver, so version is unclamped
     "crispy-bootstrap4 (>=2024.10)",
-    "django-crispy-forms (>=2.5, <2.6)",
+    "django-crispy-forms (>=2.6, <2.7)",
     "django-countries (>=8.2, <8.3)",
     "drf-spectacular (>=0.29.0, <0.30.0)",
 ]
@@ -79,7 +79,7 @@ djlint = ">=1.31.0, <1.40.0"
 sphinx-lint = "1.0"
 factory-boy = "3.0.1"
 werkzeug = ">=3.1, <4.0"
-pyopenssl = ">=24.0, <26.0"
+pyopenssl = ">=26.0, <27.0"
 furo = ">=2024.0, <2025.0"
 django-types = ">=0.23.0, <0.24.0"
 djangorestframework-types = ">=0.9.0, <0.10.0"
