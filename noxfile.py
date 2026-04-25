@@ -88,9 +88,15 @@ def audit(session):
         "pip-audit",
         "--desc",
         "--aliases",
-        # Python 3.11 - setuptools - CVE-2025-47273
+        # pip - CVE-2026-3219
         "--ignore-vuln",
-        "GHSA-5rjg-fvgr-3xxf",
+        "GHSA-58qw-9mgm-455v",
+        # pytest - CVE-2025-71176
+        "--ignore-vuln",
+        "GHSA-6w46-j5rx-g56g",
+        # # Python 3.11 - setuptools - CVE-2025-47273
+        # "--ignore-vuln",
+        # "GHSA-5rjg-fvgr-3xxf",
         # Python 3.11, 3.12, 3.13 - httpie - CVE-2023-48052
         "--ignore-vuln",
         "PYSEC-2023-242",
