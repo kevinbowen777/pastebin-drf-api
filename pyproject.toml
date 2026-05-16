@@ -4,7 +4,7 @@ version = "0.3.3"
 description = "A simple pastebin code highlighting Web API"
 requires-python = ">=3.11.0"
 dependencies = [
-    "Django (==5.2.13)",
+    "Django (==5.2.14)",
     "djangorestframework (==3.17.1)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (==15.0.1)",
@@ -67,7 +67,7 @@ django-debug-toolbar = ">=5.0.0, <6.0.0"
 pre-commit = ">=4.0, <5.0"
 ruff = ">=0.8, <1.0"
 nox = "2026.4.10"
-pytest = ">=8.4.0, <8.5.0"
+pytest = ">=9.0, <10.0"
 pytest-cov = ">=7.0.0, <8.0"
 pytest-django = ">=4.5.2, <5.0.0"
 pytest-sugar = "1.1.1"

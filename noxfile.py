@@ -88,18 +88,6 @@ def audit(session):
         "pip-audit",
         "--desc",
         "--aliases",
-        # django 5.2.13 - CVE-2026-35192
-        "--ignore-vuln",
-        "GHSA-7h2m-m8vj-598h",
-        # django 5.2.13 - CVE-2026-6907
-        "--ignore-vuln",
-        "GHSA-5hrc-gvxj-w55p",
-        # django 5.2.13 - CVE-2026-5766
-        "--ignore-vuln",
-        "GHSA-w26r-rmm8-9c29",
-        # pytest - CVE-2025-71176
-        "--ignore-vuln",
-        "GHSA-6w46-j5rx-g56g",
         # Python 3.11, 3.12, 3.13 - httpie - CVE-2023-48052
         "--ignore-vuln",
         "PYSEC-2023-242",
