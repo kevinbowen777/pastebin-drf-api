@@ -4,7 +4,7 @@ import tempfile
 
 import nox
 
-PYTHON_VERSIONS = ["3.11", "3.12", "3.13", "3.14"]
+PYTHON_VERSIONS = ["3.12", "3.13", "3.14"]
 nox.options.sessions = "audit", "lint", "coverage", "tests"
 locations = (
     "accounts",
@@ -88,6 +88,11 @@ def audit(session):
         "pip-audit",
         "--desc",
         "--aliases",
+        # nox-audit ignore vulnerability format
+        # <package_name> <version_number> - <CVE Identifier (CVE-2026-XXXXX)
+        # "--ignore-vuln",
+        # "GHSA-XXXX-XXXX-XXXX",
+        #
         # Python 3.11, 3.12, 3.13 - httpie - CVE-2023-48052
         "--ignore-vuln",
         "PYSEC-2023-242",
