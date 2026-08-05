@@ -7,6 +7,7 @@ from .forms import CustomUserChangeForm, CustomUserCreationForm
 User = get_user_model()
 
 
+@admin.register(User)
 class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
@@ -55,6 +56,3 @@ class CustomUserAdmin(UserAdmin):
         ),
         ("Important dates", {"fields": ("last_login", "date_joined")}),
     )
-
-
-admin.site.register(User, CustomUserAdmin)
