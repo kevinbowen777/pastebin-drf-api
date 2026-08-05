@@ -1,13 +1,13 @@
 [project]
 name = "pastebin-drf-api"
-version = "0.3.3"
+version = "0.3.4"
 description = "A simple pastebin code highlighting Web API"
 requires-python = ">=3.12.0"
 dependencies = [
-    "Django (==5.2.16)",
+    "Django (==6.0.7)",
     "djangorestframework (==3.17.1)",
     "django-allauth (==65.18.0)",
-    "environs[django] (==15.0.1)",
+    "environs[django] (==15.1.0)",
     "django-extensions (==4.1.0)",
     "whitenoise (==6.12.0)",
     "psycopg[binary] (==3.3.4)",
@@ -18,7 +18,7 @@ dependencies = [
     "dj-email-url (==1.0.6)",
     "django-cache-url (==3.4.6)",
     "crispy-bootstrap4 (==2026.2)",
-    "django-crispy-forms (==2.6)",
+    "django-crispy-forms (==2.7)",
     "django-countries (==9.0.0)",
     "drf-spectacular (==0.30.0)",
 ]
@@ -61,7 +61,7 @@ package-mode = false
 python = ">=3.12.0, <3.15.0"
 
 [tool.poetry.group.dev.dependencies]
-django-debug-toolbar = ">=5.0.0, <6.0.0"
+django-debug-toolbar = ">=7.0, <8.0"
 pre-commit = ">=4.0, <5.0"
 ruff = ">=0.8, <1.0"
 nox = "2026.7.11"
@@ -73,7 +73,7 @@ django-pytest = "0.2.0"
 coverage = { version = ">=7.0.0, <8.0.0", extras = ["toml"] }
 django-coverage-plugin = ">=3.2.0, <3.3.0"
 sphinx = "9.1.0"
-djlint = ">=1.40.0, <1.41.0"
+djlint = ">=1.40.0, <1.50.0"
 sphinx-lint = "1.0.2"
 factory-boy = "3.0.1"
 werkzeug = ">=3.1, <4.0"
