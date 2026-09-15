@@ -27,6 +27,50 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+pastebin-drf-api 0.3.6 (2026-09-15)
+===================================
+
+Contributor-facing changes
+--------------------------
+
+-  (`#595 <https://github.com/kevinbowen777/pastebin-drf-api/595>`_): Initial zizmor remediation. Pin GitHub actions to hashes.
+
+-  (`#598 <https://github.com/kevinbowen777/pastebin-drf-api/598>`_): Update pygments to 2.12.0
+
+-  (`#598 <https://github.com/kevinbowen777/pastebin-drf-api/598>`_): Update nox to 2026.8.17
+
+-  (`#598 <https://github.com/kevinbowen777/pastebin-drf-api/598>`_): Update gunicorn to 26.2.0
+
+-  (`#598 <https://github.com/kevinbowen777/pastebin-drf-api/598>`_): Update django-debug-toolbar to 7.1.1
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Update django-countries to 9.1.0
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Update django-allauth to 65.19.3
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Update djlint to 1.46.1
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Update towncrier to 26.9.0
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Update psycopg to 3.3.5
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Update django-debug-toolbar to 8.0.0
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Upgrade environs to 15.2.0
+
+-  (`#604 <https://github.com/kevinbowen777/pastebin-drf-api/604>`_): Replace master with main in static gh action
+
+-  (`#605 <https://github.com/kevinbowen777/pastebin-drf-api/605>`_): Upgrade GitHub actions to latest versions
+
+-  (`#698 <https://github.com/kevinbowen777/pastebin-drf-api/698>`_): Update django-allauth to 65.19.1
+
+
+New features
+------------
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Upgrade Django to 6.1.1
+
+-  (`#603 <https://github.com/kevinbowen777/pastebin-drf-api/603>`_): Upgrade djangorestframework to 3.18.1
+
 pastebin-drf-api 0.3.5 (2026-08-24)
 ===================================
 

@@ -1,16 +1,16 @@
 [project]
 name = "pastebin-drf-api"
-version = "0.3.5"
+version = "0.3.6"
 description = "A simple pastebin code highlighting Web API"
 requires-python = ">=3.12.0"
 dependencies = [
-    "Django (==6.0.8)",
-    "djangorestframework (==3.18.0)",
-    "django-allauth (==65.19.1)",
-    "environs[django] (==15.1.0)",
+    "Django (==6.1.1)",
+    "djangorestframework (==3.18.1)",
+    "django-allauth (==65.19.3)",
+    "environs[django] (==15.2.0)",
     "django-extensions (==4.1.0)",
     "whitenoise (==6.12.0)",
-    "psycopg[binary] (==3.3.4)",
+    "psycopg[binary] (==3.3.5)",
     "Pillow (==12.3.0)",
     "gunicorn (==26.2.0)",
     "Pygments (==2.21.0)",
@@ -19,7 +19,7 @@ dependencies = [
     "django-cache-url (==3.4.6)",
     "crispy-bootstrap4 (==2026.2)",
     "django-crispy-forms (==2.7)",
-    "django-countries (==9.0.0)",
+    "django-countries (==9.1.0)",
     "drf-spectacular (==0.30.0)",
 ]
 authors = [
@@ -35,7 +35,7 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Web Environment",
     "Framework :: Django",
-    "Framework :: Django :: 6.0",
+    "Framework :: Django :: 6.1",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
@@ -61,7 +61,7 @@ package-mode = false
 python = ">=3.12.0, <3.15.0"
 
 [tool.poetry.group.dev.dependencies]
-django-debug-toolbar = ">=7.0, <8.0"
+django-debug-toolbar = ">=8.0, <9.0"
 pre-commit = ">=4.0, <5.0"
 ruff = ">=0.8, <1.0"
 nox = "2026.8.17"
@@ -83,7 +83,7 @@ django-types = ">=0.24.0, <0.25.0"
 djangorestframework-types = ">=0.9.0, <0.10.0"
 httpie = "^3.1.0"
 pip-audit = "^2.9.0"
-towncrier = "25.8.0"
+towncrier = "26.9.0"
 
 [tool.poetry.requires-plugins]
 poetry-plugin-export = ">=1.10.0"
