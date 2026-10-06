@@ -94,7 +94,7 @@ DATABASES = {
         "USER": env.str("POSTGRES_USER", default="fakeuser"),
         "PASSWORD": env.str("POSTGRES_PASSWORD", "password"),
         "HOST": env.str("POSTGRES_HOST", "db"),
-        "PORT": env.int("POSTGRES_PORT", "5432"),
+        "PORT": env.int("POSTGRES_PORT", 5432),
     }
 }
 
@@ -165,7 +165,7 @@ REST_FRAMEWORK = {
 SPECTACULAR_SETTINGS = {
     "TITLE": "Pastebin DRF API Project",
     "DESCRIPTION": "A simple pastebin code highlighting Web API",
-    "VERSION": "0.1.0",
+    "VERSION": "0.3.7",
 }
 
 # django-allauth config

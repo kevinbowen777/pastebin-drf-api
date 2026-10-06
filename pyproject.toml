@@ -1,16 +1,16 @@
 [project]
 name = "pastebin-drf-api"
-version = "0.3.6"
+version = "0.3.7"
 description = "A simple pastebin code highlighting Web API"
 requires-python = ">=3.12.0"
 dependencies = [
     "Django (==6.1.1)",
     "djangorestframework (==3.18.1)",
-    "django-allauth (==65.19.3)",
+    "django-allauth (==65.19.7)",
     "environs[django] (==15.2.0)",
     "django-extensions (==4.1.0)",
     "whitenoise (==6.12.0)",
-    "psycopg[binary] (==3.3.5)",
+    "psycopg[binary] (==3.3.6)",
     "Pillow (==12.3.0)",
     "gunicorn (==26.2.0)",
     "Pygments (==2.21.0)",
@@ -50,9 +50,9 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/kevinbowen777/pastebin-drf-api.git"
-Changelog = "https://github.com/kevinbowen777/pastebin-drf-api/NEWS"
+Changelog = "https://github.com/kevinbowen777/pastebin-drf-api/CHANGELOG.rst"
 Repository = "https://github.com/kevinbowen777/pastebin-drf-api.git"
-Documentation = "file:///docs/_build/index.html"
+Documentation = "file:///docs/html/index.html"
 
 [tool.poetry]
 package-mode = false
@@ -75,7 +75,7 @@ django-coverage-plugin = ">=3.2.0, <3.3.0"
 sphinx = "9.1.0"
 djlint = ">=1.40.0, <1.50.0"
 sphinx-lint = "1.0.2"
-factory-boy = "3.0.1"
+factory-boy = "3.3.3"
 werkzeug = ">=3.1, <4.0"
 pyopenssl = ">=26.0, <27.0"
 furo = "2025.12.19"
@@ -84,13 +84,14 @@ djangorestframework-types = ">=0.9.0, <0.10.0"
 httpie = "^3.1.0"
 pip-audit = "^2.9.0"
 towncrier = "26.9.0"
+myst-parser = "5.1.0"
 
 [tool.poetry.requires-plugins]
-poetry-plugin-export = ">=1.10.0"
+poetry-plugin-export = ">=1.10.1"
 
 [tool.coverage.run]
 branch = true
-dynamic_context = "test_function"
+core = "ctrace"
 source = [
     "accounts",
     "config",
@@ -124,7 +125,7 @@ show_contexts = true
 title = "pastebin-drf-api coverage report"
 
 [tool.djlint]
-exclude = ["htmlcov", "staticfiles"]
+exclude = ["htmlcov", "staticfiles", "docs/html/"]
 files = ["templates/"]
 indent = 2
 max_line_length = 120
@@ -143,7 +144,7 @@ exclude = [
     "**/__pycache__",
     "**/migrations",
 ]
-ignore = ["docs/_build"]
+ignore = ["docs/source"]
 defineConstant = { DEBUG = true }
 stubPath = ""
 # The following may need to be modified when collaborating with others
@@ -212,28 +213,18 @@ exclude = [
     "migrations",
     "images",
     "media",
+    "docs/html/*",
 ]
 
 [tool.ruff.lint]
-select = [
-    "A",    # flake8-builtins
-    "B",    # flake8-bugbear
-    "C90",  # mccabe
-    "DJ",   # flake8-django
-    "E",    # pycodestyle errors
-    "F",    # pyflakes
-    "I",    # isort
-    "S",    # flake8-bandit
-    "W",    # pycodestyle warnings
-    # "RUF",  # ruff checks
-]
+select = []
+
 ignore = [
-    "E501",    # line too long ({width} > {limit} characters)
-    # "E203",  # slice notation whitespace (not currently supported)
-    "E402",    # module level import not at top of file
-    "E722",    # do not use bare except
-    # "W503",  # (not currently supported)
-    "ERA",     # do not autoremove commented out code
+    "line-too-long",    # line too long ({width} > {limit} characters) [E501]
+    "module-import-not-at-top-of-file",    # module level import not at top of file [E402]
+    "bare-except",    # do not use bare except [E722]
+    "ERA",     # do not autoremove commented out code [ERA]
+    "non-empty-init-module",
 ]
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
@@ -252,7 +243,7 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 "snippets/tests/*" = ["S101", "S106"]
 "snippets/tests.py" = ["S101", "S106"]
 "snippets/views.py" = ["A002"]
-"docs/conf.py" = ["A001"]
+"docs/source/conf.py" = ["A001"]
 
 [tool.ruff.lint.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
@@ -287,17 +278,41 @@ docstring-code-line-length = "dynamic"
 
 [tool.towncrier]
 directory = "changelog/"
-filename = "CHANGELOG.rst"
+filename = "docs/source/changelog.rst"
 
 title_format = "pastebin-drf-api {version} ({project_date})"
 issue_format = "`#{issue} <https://github.com/kevinbowen777/pastebin-drf-api/{issue}>`_"
 template = "changelog/_template.rst"
 
 [[tool.towncrier.type]]
+# Declarations of future API removals and breaking changes in behavior.
+directory = "deprecation"
+name = "Deprecations (removal in next major release)"
+showcontent = true
+
+[[tool.towncrier.type]]
+# New behaviors, public APIs, etc.
+directory = "feature"
+name = "New features"
+showcontent = true
+
+[[tool.towncrier.type]]
 # Something we deemed an improper undesired behavior that got corrected
 # in the release to match pre-agreed expectations.
 directory = "bugfix"
 name = "Bug fixes"
+showcontent = true
+
+[[tool.towncrier.type]]
+# Stuff that affects security. e.g. updating packages,
+directory = "security"
+name = "Security updated"
+showcontent = true
+
+[[tool.towncrier.type]]
+# Notable updates to the documentation structure or build process.
+directory = "doc"
+name = "Improved documentation"
 showcontent = true
 
 [[tool.towncrier.type]]
@@ -308,33 +323,9 @@ name = "Contributor-facing changes"
 showcontent = true
 
 [[tool.towncrier.type]]
-# Declarations of future API removals and breaking changes in behavior.
-directory = "deprecation"
-name = "Deprecations (removal in next major release)"
-showcontent = true
-
-[[tool.towncrier.type]]
-# Notable updates to the documentation structure or build process.
-directory = "doc"
-name = "Improved documentation"
-showcontent = true
-
-[[tool.towncrier.type]]
-# New behaviors, public APIs, etc.
-directory = "feature"
-name = "New features"
-showcontent = true
-
-[[tool.towncrier.type]]
 # Changes that are hard to assign to any of the above categories.
 directory = "misc"
 name = "Miscellaneous internal changes"
-showcontent = true
-
-[[tool.towncrier.type]]
-# Stuff that affects security. e.g. updating packages,
-directory = "security"
-name = "Security updated"
 showcontent = true
 
 [[tool.towncrier.type]]
