@@ -93,9 +93,9 @@ def audit(session):
         # "--ignore-vuln",
         # "GHSA-XXXX-XXXX-XXXX",
         #
-        # Python 3.11, 3.12, 3.13 - httpie - CVE-2023-48052
-        # "--ignore-vuln",
-        # "PYSEC-2023-242",
+        # Python 3.12, 3.13, 3.14 - httpie - CVE-2023-48052
+        "--ignore-vuln",
+        "PYSEC-2023-242",
     )
 
 

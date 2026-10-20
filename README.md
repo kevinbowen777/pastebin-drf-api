@@ -184,7 +184,7 @@ TBD
 ### Contributing
 
 You are free to fork this repository and modify as you see fit. See
-[CONTRIBUTING](https://github.com/kevinbowen777/django-api-blog/CONTRIBUTING) for details on reporting issues, etc.
+[CONTRIBUTING](https://github.com/kevinbowen777/pastebin-drf-api/CONTRIBUTING) for details on reporting issues, etc.
 
 ---
 

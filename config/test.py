@@ -31,7 +31,7 @@ PASSWORD_HASHERS = ["django.contrib.auth.hashers.MD5PasswordHasher"]
 # ------------------------------------------------------------------------------
 # APP_DIRS needs to be set to 'False' in config/settings.py to
 # use this section - 20230729
-# TEMPLATES[-1]["OPTIONS"]["loaders"] = [  # noqa: F405
+# TEMPLATES[-1]["OPTIONS"]["loaders"] = [
 #     (
 #         "django.template.loaders.cached.Loader",
 #         [
@@ -41,7 +41,7 @@ PASSWORD_HASHERS = ["django.contrib.auth.hashers.MD5PasswordHasher"]
 #     )
 # ]
 # The following is being used in updated django-cookiecutter - 20230801
-TEMPLATES[0]["OPTIONS"]["debug"] = True  # type: ignore # noqa: F405
+TEMPLATES[0]["OPTIONS"]["debug"] = True
 
 # EMAIL
 # ------------------------------------------------------------------------------
