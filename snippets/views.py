@@ -14,14 +14,10 @@ User = get_user_model()
 
 @api_view(["GET"])
 def api_root(request, format=None):
-    return Response(
-        # fmt: off
-        {
-            "users": reverse("user-list", request=request, format=format),
-            "snippets": reverse("snippet-list", request=request, format=format),
-        }
-        # fmt: on
-    )
+    return Response({
+        "users": reverse("user-list", request=request, format=format),
+        "snippets": reverse("snippet-list", request=request, format=format),
+    })
 
 
 class SnippetViewSet(viewsets.ModelViewSet):

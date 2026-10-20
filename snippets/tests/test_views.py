@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
-from django.urls import reverse  # noqa:F401
-from rest_framework import status  # noqa:F401
+from django.urls import reverse
+from rest_framework import status
 from rest_framework.test import APITestCase
 
 from ..models import Snippet
@@ -24,7 +24,6 @@ class SnippetTests(APITestCase):
 
     def test__str__(self):
         # snippet = Snippet.objects.get(id=1)
-        assert self.snippet.__str__() == self.snippet.title
         assert str(self.snippet) == self.snippet.title
 
     def test_blog_content(self):

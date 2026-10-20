@@ -27,6 +27,30 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+pastebin-drf-api 0.3.8 (2026-10-20)
+===================================
+
+Security updated
+----------------
+
+-  (`#607 <https://github.com/kevinbowen777/pastebin-drf-api/607>`_): Update django-allauth to 65.20.0
+
+-  (`#607 <https://github.com/kevinbowen777/pastebin-drf-api/607>`_): Update pillow to 13.0.0
+
+-  (`#607 <https://github.com/kevinbowen777/pastebin-drf-api/607>`_): Update djangorestframework
+
+-  (`#609 <https://github.com/kevinbowen777/pastebin-drf-api/609>`_): Update Django to 6.1.2
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#607 <https://github.com/kevinbowen777/pastebin-drf-api/607>`_): Update ruff rules & fix reported errors
+
+-  (`#607 <https://github.com/kevinbowen777/pastebin-drf-api/607>`_): Update djlint to 1.46.4
+
+-  (`#607 <https://github.com/kevinbowen777/pastebin-drf-api/607>`_): Update testing for Python 3.14.8, 3.13.16, 3.12.15
+
 pastebin-drf-api 0.3.7 (2026-10-06)
 ===================================
 
