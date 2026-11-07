@@ -41,7 +41,7 @@ PASSWORD_HASHERS = ["django.contrib.auth.hashers.MD5PasswordHasher"]
 #     )
 # ]
 # The following is being used in updated django-cookiecutter - 20230801
-TEMPLATES[0]["OPTIONS"]["debug"] = True
+TEMPLATES[0]["OPTIONS"]["debug"] = True  # type: ignore # noqa: F405
 
 # EMAIL
 # ------------------------------------------------------------------------------
