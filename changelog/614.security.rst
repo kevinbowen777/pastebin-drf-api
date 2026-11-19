@@ -1,0 +1,1 @@
+Rewrite GitHub actions with zizmor remediation
